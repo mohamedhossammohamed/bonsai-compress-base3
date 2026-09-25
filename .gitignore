@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.safetensors
+*.gguf
+*.bin
+*.dylib
+*api_key*
+.bonsai_api_key

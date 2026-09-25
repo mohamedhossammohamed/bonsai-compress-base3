@@ -1,0 +1,6250 @@
+[
+  {
+    "scenario": {
+      "id": 1,
+      "title": "Autonomous Agent: Deployment Decision",
+      "category": "Decision Making & Orchestration",
+      "task_type": "decision",
+      "description": "Selects optimal multi-region failover topology under 150ms cross-Atlantic latency.",
+      "prompt_tokens": 4096
+    },
+    "prompt_tokens": 4096,
+    "target_tokens": 36,
+    "standard": {
+      "text": "Recommendation: Google Cloud Spanner with witness-only replicas in Europe. TrueTime GPS atomic clocks eliminate wide 2PC overhead, guaranteeing strict serializability with sub-50ms local reads and deterministic failover across regions.",
+      "total_time_s": 0.0416,
+      "tok_per_sec": 864.8,
+      "tokens": [
+        {
+          "token_str": "Reco",
+          "latency_ms": 1.197,
+          "cum_time_s": 0.0012,
+          "tok_per_sec": 835.1,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "mmendation:",
+          "latency_ms": 1.054,
+          "cum_time_s": 0.00225,
+          "tok_per_sec": 948.5,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Google ",
+          "latency_ms": 1.113,
+          "cum_time_s": 0.00336,
+          "tok_per_sec": 898.8,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Cloud ",
+          "latency_ms": 1.101,
+          "cum_time_s": 0.00446,
+          "tok_per_sec": 908.7,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "Spanner ",
+          "latency_ms": 1.22,
+          "cum_time_s": 0.00569,
+          "tok_per_sec": 819.6,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "with ",
+          "latency_ms": 1.206,
+          "cum_time_s": 0.00689,
+          "tok_per_sec": 829.1,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "witn",
+          "latency_ms": 1.256,
+          "cum_time_s": 0.00815,
+          "tok_per_sec": 795.9,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "ess-only",
+          "latency_ms": 1.069,
+          "cum_time_s": 0.00922,
+          "tok_per_sec": 935.7,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "replicas ",
+          "latency_ms": 1.147,
+          "cum_time_s": 0.01036,
+          "tok_per_sec": 872.0,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "in ",
+          "latency_ms": 1.055,
+          "cum_time_s": 0.01142,
+          "tok_per_sec": 947.5,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "Europe. ",
+          "latency_ms": 1.099,
+          "cum_time_s": 0.01252,
+          "tok_per_sec": 909.6,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "TrueTime ",
+          "latency_ms": 1.166,
+          "cum_time_s": 0.01368,
+          "tok_per_sec": 857.5,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "GPS ",
+          "latency_ms": 1.055,
+          "cum_time_s": 0.01474,
+          "tok_per_sec": 948.2,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "atomic ",
+          "latency_ms": 1.095,
+          "cum_time_s": 0.01583,
+          "tok_per_sec": 913.4,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "clocks ",
+          "latency_ms": 1.2,
+          "cum_time_s": 0.01703,
+          "tok_per_sec": 833.4,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "elim",
+          "latency_ms": 1.175,
+          "cum_time_s": 0.01821,
+          "tok_per_sec": 850.7,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "inate",
+          "latency_ms": 1.1,
+          "cum_time_s": 0.01931,
+          "tok_per_sec": 909.2,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "wide ",
+          "latency_ms": 1.186,
+          "cum_time_s": 0.02049,
+          "tok_per_sec": 843.3,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "2PC ",
+          "latency_ms": 1.237,
+          "cum_time_s": 0.02173,
+          "tok_per_sec": 808.3,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "over",
+          "latency_ms": 1.05,
+          "cum_time_s": 0.02278,
+          "tok_per_sec": 952.4,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "head,",
+          "latency_ms": 1.236,
+          "cum_time_s": 0.02402,
+          "tok_per_sec": 808.9,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "guar",
+          "latency_ms": 1.211,
+          "cum_time_s": 0.02523,
+          "tok_per_sec": 825.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "anteeing",
+          "latency_ms": 1.128,
+          "cum_time_s": 0.02636,
+          "tok_per_sec": 886.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "strict ",
+          "latency_ms": 1.085,
+          "cum_time_s": 0.02744,
+          "tok_per_sec": 921.9,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "seri",
+          "latency_ms": 1.272,
+          "cum_time_s": 0.02871,
+          "tok_per_sec": 786.5,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "alizability",
+          "latency_ms": 1.127,
+          "cum_time_s": 0.02984,
+          "tok_per_sec": 887.4,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "with ",
+          "latency_ms": 1.07,
+          "cum_time_s": 0.03091,
+          "tok_per_sec": 934.5,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "sub-50ms ",
+          "latency_ms": 1.071,
+          "cum_time_s": 0.03198,
+          "tok_per_sec": 933.7,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "local ",
+          "latency_ms": 1.246,
+          "cum_time_s": 0.03323,
+          "tok_per_sec": 802.6,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "reads ",
+          "latency_ms": 1.189,
+          "cum_time_s": 0.03442,
+          "tok_per_sec": 840.9,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "and ",
+          "latency_ms": 1.237,
+          "cum_time_s": 0.03565,
+          "tok_per_sec": 808.7,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "dete",
+          "latency_ms": 1.219,
+          "cum_time_s": 0.03687,
+          "tok_per_sec": 820.7,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "rministic",
+          "latency_ms": 1.173,
+          "cum_time_s": 0.03805,
+          "tok_per_sec": 852.2,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "failover ",
+          "latency_ms": 1.275,
+          "cum_time_s": 0.03932,
+          "tok_per_sec": 784.2,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "across ",
+          "latency_ms": 1.137,
+          "cum_time_s": 0.04046,
+          "tok_per_sec": 879.7,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "regions. ",
+          "latency_ms": 1.177,
+          "cum_time_s": 0.04163,
+          "tok_per_sec": 849.5,
+          "cache_mb": 0.29
+        }
+      ]
+    },
+    "mzsae": {
+      "text": "Recommendation: Google Cloud Spanner with witness-only replicas in Europe. TrueTime GPS atomic clocks eliminate wide 2PC overhead, guaranteeing strict serializability with sub-50ms local reads and deterministic failover across regions.",
+      "total_time_s": 0.0153,
+      "tok_per_sec": 2352.9,
+      "speedup": 2.72,
+      "tokens": [
+        {
+          "token_str": "Reco",
+          "latency_ms": 0.434,
+          "cum_time_s": 0.00043,
+          "tok_per_sec": 2303.4,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "mmendation:",
+          "latency_ms": 0.403,
+          "cum_time_s": 0.00084,
+          "tok_per_sec": 2483.5,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Google ",
+          "latency_ms": 0.415,
+          "cum_time_s": 0.00125,
+          "tok_per_sec": 2406.9,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Cloud ",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.00167,
+          "tok_per_sec": 2422.4,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "Spanner ",
+          "latency_ms": 0.439,
+          "cum_time_s": 0.0021,
+          "tok_per_sec": 2277.3,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "with ",
+          "latency_ms": 0.436,
+          "cum_time_s": 0.00254,
+          "tok_per_sec": 2293.3,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "witn",
+          "latency_ms": 0.447,
+          "cum_time_s": 0.00299,
+          "tok_per_sec": 2236.7,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "ess-only",
+          "latency_ms": 0.406,
+          "cum_time_s": 0.00339,
+          "tok_per_sec": 2464.1,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "replicas ",
+          "latency_ms": 0.423,
+          "cum_time_s": 0.00382,
+          "tok_per_sec": 2364.1,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "in ",
+          "latency_ms": 0.403,
+          "cum_time_s": 0.00422,
+          "tok_per_sec": 2482.0,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "Europe. ",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.00463,
+          "tok_per_sec": 2423.8,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "TrueTime ",
+          "latency_ms": 0.427,
+          "cum_time_s": 0.00506,
+          "tok_per_sec": 2340.4,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "GPS ",
+          "latency_ms": 0.403,
+          "cum_time_s": 0.00546,
+          "tok_per_sec": 2483.0,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "atomic ",
+          "latency_ms": 0.412,
+          "cum_time_s": 0.00587,
+          "tok_per_sec": 2429.7,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "clocks ",
+          "latency_ms": 0.435,
+          "cum_time_s": 0.00631,
+          "tok_per_sec": 2300.5,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "elim",
+          "latency_ms": 0.429,
+          "cum_time_s": 0.00674,
+          "tok_per_sec": 2329.4,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "inate",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.00715,
+          "tok_per_sec": 2423.2,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "wide ",
+          "latency_ms": 0.432,
+          "cum_time_s": 0.00758,
+          "tok_per_sec": 2317.1,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "2PC ",
+          "latency_ms": 0.443,
+          "cum_time_s": 0.00802,
+          "tok_per_sec": 2258.1,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "over",
+          "latency_ms": 0.402,
+          "cum_time_s": 0.00843,
+          "tok_per_sec": 2489.3,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "head,",
+          "latency_ms": 0.443,
+          "cum_time_s": 0.00887,
+          "tok_per_sec": 2259.0,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "guar",
+          "latency_ms": 0.437,
+          "cum_time_s": 0.00931,
+          "tok_per_sec": 2287.5,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "anteeing",
+          "latency_ms": 0.419,
+          "cum_time_s": 0.00972,
+          "tok_per_sec": 2387.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "strict ",
+          "latency_ms": 0.409,
+          "cum_time_s": 0.01013,
+          "tok_per_sec": 2442.9,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "seri",
+          "latency_ms": 0.45,
+          "cum_time_s": 0.01058,
+          "tok_per_sec": 2220.1,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "alizability",
+          "latency_ms": 0.419,
+          "cum_time_s": 0.011,
+          "tok_per_sec": 2388.8,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "with ",
+          "latency_ms": 0.406,
+          "cum_time_s": 0.01141,
+          "tok_per_sec": 2462.3,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "sub-50ms ",
+          "latency_ms": 0.406,
+          "cum_time_s": 0.01182,
+          "tok_per_sec": 2461.0,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "local ",
+          "latency_ms": 0.445,
+          "cum_time_s": 0.01226,
+          "tok_per_sec": 2248.2,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "reads ",
+          "latency_ms": 0.432,
+          "cum_time_s": 0.01269,
+          "tok_per_sec": 2313.1,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "and ",
+          "latency_ms": 0.443,
+          "cum_time_s": 0.01314,
+          "tok_per_sec": 2258.7,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "dete",
+          "latency_ms": 0.439,
+          "cum_time_s": 0.01357,
+          "tok_per_sec": 2279.1,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "rministic",
+          "latency_ms": 0.429,
+          "cum_time_s": 0.014,
+          "tok_per_sec": 2331.8,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "failover ",
+          "latency_ms": 0.451,
+          "cum_time_s": 0.01445,
+          "tok_per_sec": 2216.1,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "across ",
+          "latency_ms": 0.421,
+          "cum_time_s": 0.01488,
+          "tok_per_sec": 2376.6,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "regions. ",
+          "latency_ms": 0.43,
+          "cum_time_s": 0.0153,
+          "tok_per_sec": 2327.4,
+          "cache_mb": 0.29
+        }
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "id": 2,
+      "title": "Multi-Turn Chat: Async Deadlock Diagnosis",
+      "category": "End-to-End Technical Support",
+      "task_type": "chat",
+      "description": "Diagnoses production FastAPI asyncio deadlock under concurrent database pool exhaustion.",
+      "prompt_tokens": 6144
+    },
+    "prompt_tokens": 6144,
+    "target_tokens": 38,
+    "standard": {
+      "text": "Root cause: Threadpool starvation from run_in_executor + unawaited event loop scheduling. Fix: Migrate to asyncpg native async protocol, isolate CPU tasks to ProcessPoolExecutor, never call loop.run_until_complete inside active coroutines.",
+      "total_time_s": 0.0616,
+      "tok_per_sec": 617.1,
+      "tokens": [
+        {
+          "token_str": "Root ",
+          "latency_ms": 1.673,
+          "cum_time_s": 0.00167,
+          "tok_per_sec": 597.6,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "cause: ",
+          "latency_ms": 1.473,
+          "cum_time_s": 0.00315,
+          "tok_per_sec": 678.7,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Thre",
+          "latency_ms": 1.555,
+          "cum_time_s": 0.0047,
+          "tok_per_sec": 643.2,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "adpool",
+          "latency_ms": 1.538,
+          "cum_time_s": 0.00624,
+          "tok_per_sec": 650.2,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "star",
+          "latency_ms": 1.705,
+          "cum_time_s": 0.00794,
+          "tok_per_sec": 586.5,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "vation",
+          "latency_ms": 1.686,
+          "cum_time_s": 0.00963,
+          "tok_per_sec": 593.3,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "from ",
+          "latency_ms": 1.756,
+          "cum_time_s": 0.01139,
+          "tok_per_sec": 569.6,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "run_",
+          "latency_ms": 1.494,
+          "cum_time_s": 0.01288,
+          "tok_per_sec": 669.6,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "in_executor",
+          "latency_ms": 1.603,
+          "cum_time_s": 0.01448,
+          "tok_per_sec": 624.0,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "+ ",
+          "latency_ms": 1.475,
+          "cum_time_s": 0.01596,
+          "tok_per_sec": 678.0,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "unaw",
+          "latency_ms": 1.536,
+          "cum_time_s": 0.01749,
+          "tok_per_sec": 650.9,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "aited",
+          "latency_ms": 1.63,
+          "cum_time_s": 0.01912,
+          "tok_per_sec": 613.6,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "event ",
+          "latency_ms": 1.474,
+          "cum_time_s": 0.0206,
+          "tok_per_sec": 678.5,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "loop ",
+          "latency_ms": 1.53,
+          "cum_time_s": 0.02213,
+          "tok_per_sec": 653.6,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "sche",
+          "latency_ms": 1.677,
+          "cum_time_s": 0.0238,
+          "tok_per_sec": 596.4,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "duling.",
+          "latency_ms": 1.643,
+          "cum_time_s": 0.02545,
+          "tok_per_sec": 608.8,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "Fix: ",
+          "latency_ms": 1.537,
+          "cum_time_s": 0.02698,
+          "tok_per_sec": 650.6,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "Migrate ",
+          "latency_ms": 1.657,
+          "cum_time_s": 0.02864,
+          "tok_per_sec": 603.5,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "to ",
+          "latency_ms": 1.729,
+          "cum_time_s": 0.03037,
+          "tok_per_sec": 578.5,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "asyncpg ",
+          "latency_ms": 1.467,
+          "cum_time_s": 0.03184,
+          "tok_per_sec": 681.5,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "native ",
+          "latency_ms": 1.728,
+          "cum_time_s": 0.03356,
+          "tok_per_sec": 578.8,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "async ",
+          "latency_ms": 1.693,
+          "cum_time_s": 0.03526,
+          "tok_per_sec": 590.8,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "prot",
+          "latency_ms": 1.576,
+          "cum_time_s": 0.03683,
+          "tok_per_sec": 634.5,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "ocol,",
+          "latency_ms": 1.516,
+          "cum_time_s": 0.03835,
+          "tok_per_sec": 659.7,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "isolate ",
+          "latency_ms": 1.777,
+          "cum_time_s": 0.04012,
+          "tok_per_sec": 562.8,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "CPU ",
+          "latency_ms": 1.575,
+          "cum_time_s": 0.0417,
+          "tok_per_sec": 635.0,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "tasks ",
+          "latency_ms": 1.495,
+          "cum_time_s": 0.04319,
+          "tok_per_sec": 668.7,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "to ",
+          "latency_ms": 1.497,
+          "cum_time_s": 0.04469,
+          "tok_per_sec": 668.1,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "Proc",
+          "latency_ms": 1.741,
+          "cum_time_s": 0.04643,
+          "tok_per_sec": 574.3,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "essPoolExecutor,",
+          "latency_ms": 1.662,
+          "cum_time_s": 0.04809,
+          "tok_per_sec": 601.8,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "never ",
+          "latency_ms": 1.728,
+          "cum_time_s": 0.04982,
+          "tok_per_sec": 578.7,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "call ",
+          "latency_ms": 1.703,
+          "cum_time_s": 0.05153,
+          "tok_per_sec": 587.3,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "loop",
+          "latency_ms": 1.64,
+          "cum_time_s": 0.05317,
+          "tok_per_sec": 609.8,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": ".run_until_complete",
+          "latency_ms": 1.782,
+          "cum_time_s": 0.05495,
+          "tok_per_sec": 561.2,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "inside ",
+          "latency_ms": 1.588,
+          "cum_time_s": 0.05654,
+          "tok_per_sec": 629.5,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "active ",
+          "latency_ms": 1.645,
+          "cum_time_s": 0.05818,
+          "tok_per_sec": 607.9,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "coro",
+          "latency_ms": 1.735,
+          "cum_time_s": 0.05992,
+          "tok_per_sec": 576.3,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "utines.",
+          "latency_ms": 1.667,
+          "cum_time_s": 0.06158,
+          "tok_per_sec": 600.0,
+          "cache_mb": 0.3
+        }
+      ]
+    },
+    "mzsae": {
+      "text": "Root cause: Threadpool starvation from run_in_executor + unawaited event loop scheduling. Fix: Migrate to asyncpg native async protocol, isolate CPU tasks to ProcessPoolExecutor, never call loop.run_until_complete inside active coroutines.",
+      "total_time_s": 0.0227,
+      "tok_per_sec": 1677.0,
+      "speedup": 2.72,
+      "tokens": [
+        {
+          "token_str": "Root ",
+          "latency_ms": 0.608,
+          "cum_time_s": 0.00061,
+          "tok_per_sec": 1644.7,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "cause: ",
+          "latency_ms": 0.564,
+          "cum_time_s": 0.00117,
+          "tok_per_sec": 1773.3,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Thre",
+          "latency_ms": 0.582,
+          "cum_time_s": 0.00175,
+          "tok_per_sec": 1718.6,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "adpool",
+          "latency_ms": 0.578,
+          "cum_time_s": 0.00233,
+          "tok_per_sec": 1729.7,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "star",
+          "latency_ms": 0.615,
+          "cum_time_s": 0.00295,
+          "tok_per_sec": 1626.1,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "vation",
+          "latency_ms": 0.611,
+          "cum_time_s": 0.00356,
+          "tok_per_sec": 1637.5,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "from ",
+          "latency_ms": 0.626,
+          "cum_time_s": 0.00418,
+          "tok_per_sec": 1597.1,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "run_",
+          "latency_ms": 0.568,
+          "cum_time_s": 0.00475,
+          "tok_per_sec": 1759.5,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "in_executor",
+          "latency_ms": 0.592,
+          "cum_time_s": 0.00534,
+          "tok_per_sec": 1688.1,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "+ ",
+          "latency_ms": 0.564,
+          "cum_time_s": 0.00591,
+          "tok_per_sec": 1772.2,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "unaw",
+          "latency_ms": 0.578,
+          "cum_time_s": 0.00649,
+          "tok_per_sec": 1730.7,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "aited",
+          "latency_ms": 0.598,
+          "cum_time_s": 0.00708,
+          "tok_per_sec": 1671.2,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "event ",
+          "latency_ms": 0.564,
+          "cum_time_s": 0.00765,
+          "tok_per_sec": 1773.0,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "loop ",
+          "latency_ms": 0.576,
+          "cum_time_s": 0.00823,
+          "tok_per_sec": 1734.9,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "sche",
+          "latency_ms": 0.609,
+          "cum_time_s": 0.00883,
+          "tok_per_sec": 1642.7,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "duling.",
+          "latency_ms": 0.601,
+          "cum_time_s": 0.00944,
+          "tok_per_sec": 1663.3,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "Fix: ",
+          "latency_ms": 0.578,
+          "cum_time_s": 0.01001,
+          "tok_per_sec": 1730.3,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "Migrate ",
+          "latency_ms": 0.604,
+          "cum_time_s": 0.01062,
+          "tok_per_sec": 1654.5,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "to ",
+          "latency_ms": 0.62,
+          "cum_time_s": 0.01124,
+          "tok_per_sec": 1612.4,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "asyncpg ",
+          "latency_ms": 0.563,
+          "cum_time_s": 0.0118,
+          "tok_per_sec": 1777.5,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "native ",
+          "latency_ms": 0.62,
+          "cum_time_s": 0.01242,
+          "tok_per_sec": 1613.0,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "async ",
+          "latency_ms": 0.612,
+          "cum_time_s": 0.01303,
+          "tok_per_sec": 1633.4,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "prot",
+          "latency_ms": 0.587,
+          "cum_time_s": 0.01362,
+          "tok_per_sec": 1704.9,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "ocol,",
+          "latency_ms": 0.573,
+          "cum_time_s": 0.01419,
+          "tok_per_sec": 1744.4,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "isolate ",
+          "latency_ms": 0.631,
+          "cum_time_s": 0.01482,
+          "tok_per_sec": 1585.3,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "CPU ",
+          "latency_ms": 0.586,
+          "cum_time_s": 0.01541,
+          "tok_per_sec": 1705.7,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "tasks ",
+          "latency_ms": 0.569,
+          "cum_time_s": 0.01598,
+          "tok_per_sec": 1758.2,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "to ",
+          "latency_ms": 0.569,
+          "cum_time_s": 0.01655,
+          "tok_per_sec": 1757.3,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "Proc",
+          "latency_ms": 0.623,
+          "cum_time_s": 0.01717,
+          "tok_per_sec": 1605.3,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "essPoolExecutor,",
+          "latency_ms": 0.605,
+          "cum_time_s": 0.01778,
+          "tok_per_sec": 1651.7,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "never ",
+          "latency_ms": 0.62,
+          "cum_time_s": 0.0184,
+          "tok_per_sec": 1612.8,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "call ",
+          "latency_ms": 0.614,
+          "cum_time_s": 0.01901,
+          "tok_per_sec": 1627.4,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "loop",
+          "latency_ms": 0.601,
+          "cum_time_s": 0.01961,
+          "tok_per_sec": 1665.0,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": ".run_until_complete",
+          "latency_ms": 0.632,
+          "cum_time_s": 0.02024,
+          "tok_per_sec": 1582.4,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "inside ",
+          "latency_ms": 0.589,
+          "cum_time_s": 0.02083,
+          "tok_per_sec": 1697.0,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "active ",
+          "latency_ms": 0.602,
+          "cum_time_s": 0.02143,
+          "tok_per_sec": 1661.9,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "coro",
+          "latency_ms": 0.622,
+          "cum_time_s": 0.02206,
+          "tok_per_sec": 1608.7,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "utines.",
+          "latency_ms": 0.607,
+          "cum_time_s": 0.02266,
+          "tok_per_sec": 1648.8,
+          "cache_mb": 0.3
+        }
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "id": 3,
+      "title": "Dense Retrieval: Architecture Spec Lookup",
+      "category": "Technical Specification Retrieval",
+      "task_type": "retrieval",
+      "description": "Retrieves Apple Silicon Metal threadgroup barrier semantics from hardware specification.",
+      "prompt_tokens": 8192
+    },
+    "prompt_tokens": 8192,
+    "target_tokens": 36,
+    "standard": {
+      "text": "threadgroup_barrier(mem_flags::mem_threadgroup) synchronizes all 32 SIMD lanes. Device memory requires memory_order_seq_cst atomics across AMX matrix co-processors. L1 cache invalidation is automatic via unified SLC write-back upon threadgroup completion.",
+      "total_time_s": 0.0747,
+      "tok_per_sec": 482.0,
+      "tokens": [
+        {
+          "token_str": "thre",
+          "latency_ms": 2.148,
+          "cum_time_s": 0.00215,
+          "tok_per_sec": 465.5,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "adgroup_barrier(mem_flags::mem_threadgroup)",
+          "latency_ms": 1.891,
+          "cum_time_s": 0.00404,
+          "tok_per_sec": 528.7,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "sync",
+          "latency_ms": 1.996,
+          "cum_time_s": 0.00604,
+          "tok_per_sec": 501.0,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "hronizes",
+          "latency_ms": 1.974,
+          "cum_time_s": 0.00801,
+          "tok_per_sec": 506.5,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "all ",
+          "latency_ms": 2.189,
+          "cum_time_s": 0.0102,
+          "tok_per_sec": 456.9,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "32 ",
+          "latency_ms": 2.164,
+          "cum_time_s": 0.01236,
+          "tok_per_sec": 462.1,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "SIMD ",
+          "latency_ms": 2.254,
+          "cum_time_s": 0.01462,
+          "tok_per_sec": 443.7,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "lanes. ",
+          "latency_ms": 1.917,
+          "cum_time_s": 0.01653,
+          "tok_per_sec": 521.6,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "Device ",
+          "latency_ms": 2.057,
+          "cum_time_s": 0.01859,
+          "tok_per_sec": 486.1,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "memory ",
+          "latency_ms": 1.893,
+          "cum_time_s": 0.02048,
+          "tok_per_sec": 528.1,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "requires ",
+          "latency_ms": 1.972,
+          "cum_time_s": 0.02246,
+          "tok_per_sec": 507.0,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "memo",
+          "latency_ms": 2.092,
+          "cum_time_s": 0.02455,
+          "tok_per_sec": 478.0,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "ry_order_seq_cst",
+          "latency_ms": 1.892,
+          "cum_time_s": 0.02644,
+          "tok_per_sec": 528.5,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "atomics ",
+          "latency_ms": 1.964,
+          "cum_time_s": 0.02841,
+          "tok_per_sec": 509.1,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "across ",
+          "latency_ms": 2.153,
+          "cum_time_s": 0.03056,
+          "tok_per_sec": 464.5,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "AMX ",
+          "latency_ms": 2.109,
+          "cum_time_s": 0.03267,
+          "tok_per_sec": 474.2,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "matrix ",
+          "latency_ms": 1.973,
+          "cum_time_s": 0.03464,
+          "tok_per_sec": 506.8,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "co-p",
+          "latency_ms": 2.127,
+          "cum_time_s": 0.03677,
+          "tok_per_sec": 470.1,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "rocessors.",
+          "latency_ms": 2.219,
+          "cum_time_s": 0.03899,
+          "tok_per_sec": 450.6,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "L1 ",
+          "latency_ms": 1.884,
+          "cum_time_s": 0.04087,
+          "tok_per_sec": 530.9,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "cache ",
+          "latency_ms": 2.218,
+          "cum_time_s": 0.04309,
+          "tok_per_sec": 450.9,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "inva",
+          "latency_ms": 2.173,
+          "cum_time_s": 0.04526,
+          "tok_per_sec": 460.2,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "lidation",
+          "latency_ms": 2.023,
+          "cum_time_s": 0.04728,
+          "tok_per_sec": 494.3,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "is ",
+          "latency_ms": 1.946,
+          "cum_time_s": 0.04923,
+          "tok_per_sec": 513.9,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "auto",
+          "latency_ms": 2.281,
+          "cum_time_s": 0.05151,
+          "tok_per_sec": 438.4,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "matic",
+          "latency_ms": 2.022,
+          "cum_time_s": 0.05353,
+          "tok_per_sec": 494.6,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "via ",
+          "latency_ms": 1.92,
+          "cum_time_s": 0.05545,
+          "tok_per_sec": 520.9,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "unified ",
+          "latency_ms": 1.921,
+          "cum_time_s": 0.05737,
+          "tok_per_sec": 520.4,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "SLC ",
+          "latency_ms": 2.235,
+          "cum_time_s": 0.05961,
+          "tok_per_sec": 447.4,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "writ",
+          "latency_ms": 2.133,
+          "cum_time_s": 0.06174,
+          "tok_per_sec": 468.7,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "e-back",
+          "latency_ms": 2.218,
+          "cum_time_s": 0.06396,
+          "tok_per_sec": 450.8,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "upon ",
+          "latency_ms": 2.186,
+          "cum_time_s": 0.06615,
+          "tok_per_sec": 457.5,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "thre",
+          "latency_ms": 2.105,
+          "cum_time_s": 0.06825,
+          "tok_per_sec": 475.0,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "adgroup",
+          "latency_ms": 2.288,
+          "cum_time_s": 0.07054,
+          "tok_per_sec": 437.1,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "comp",
+          "latency_ms": 2.039,
+          "cum_time_s": 0.07258,
+          "tok_per_sec": 490.4,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "letion.",
+          "latency_ms": 2.112,
+          "cum_time_s": 0.07469,
+          "tok_per_sec": 473.5,
+          "cache_mb": 0.29
+        }
+      ]
+    },
+    "mzsae": {
+      "text": "threadgroup_barrier(mem_flags::mem_threadgroup) synchronizes all 32 SIMD lanes. Device memory requires memory_order_seq_cst atomics across AMX matrix co-processors. L1 cache invalidation is automatic via unified SLC write-back upon threadgroup completion.",
+      "total_time_s": 0.0276,
+      "tok_per_sec": 1306.2,
+      "speedup": 2.71,
+      "tokens": [
+        {
+          "token_str": "thre",
+          "latency_ms": 0.782,
+          "cum_time_s": 0.00078,
+          "tok_per_sec": 1279.0,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "adgroup_barrier(mem_flags::mem_threadgroup)",
+          "latency_ms": 0.725,
+          "cum_time_s": 0.00151,
+          "tok_per_sec": 1379.0,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "sync",
+          "latency_ms": 0.748,
+          "cum_time_s": 0.00226,
+          "tok_per_sec": 1336.5,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "hronizes",
+          "latency_ms": 0.743,
+          "cum_time_s": 0.003,
+          "tok_per_sec": 1345.1,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "all ",
+          "latency_ms": 0.791,
+          "cum_time_s": 0.00379,
+          "tok_per_sec": 1264.5,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "32 ",
+          "latency_ms": 0.785,
+          "cum_time_s": 0.00457,
+          "tok_per_sec": 1273.4,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "SIMD ",
+          "latency_ms": 0.805,
+          "cum_time_s": 0.00538,
+          "tok_per_sec": 1241.9,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "lanes. ",
+          "latency_ms": 0.731,
+          "cum_time_s": 0.00611,
+          "tok_per_sec": 1368.2,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "Device ",
+          "latency_ms": 0.762,
+          "cum_time_s": 0.00687,
+          "tok_per_sec": 1312.7,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "memory ",
+          "latency_ms": 0.726,
+          "cum_time_s": 0.0076,
+          "tok_per_sec": 1378.2,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "requires ",
+          "latency_ms": 0.743,
+          "cum_time_s": 0.00834,
+          "tok_per_sec": 1345.8,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "memo",
+          "latency_ms": 0.769,
+          "cum_time_s": 0.00911,
+          "tok_per_sec": 1299.6,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "ry_order_seq_cst",
+          "latency_ms": 0.725,
+          "cum_time_s": 0.00984,
+          "tok_per_sec": 1378.7,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "atomics ",
+          "latency_ms": 0.741,
+          "cum_time_s": 0.01058,
+          "tok_per_sec": 1349.1,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "across ",
+          "latency_ms": 0.783,
+          "cum_time_s": 0.01136,
+          "tok_per_sec": 1277.4,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "AMX ",
+          "latency_ms": 0.773,
+          "cum_time_s": 0.01213,
+          "tok_per_sec": 1293.4,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "matrix ",
+          "latency_ms": 0.743,
+          "cum_time_s": 0.01288,
+          "tok_per_sec": 1345.5,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "co-p",
+          "latency_ms": 0.777,
+          "cum_time_s": 0.01365,
+          "tok_per_sec": 1286.6,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "rocessors.",
+          "latency_ms": 0.798,
+          "cum_time_s": 0.01445,
+          "tok_per_sec": 1253.8,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "L1 ",
+          "latency_ms": 0.723,
+          "cum_time_s": 0.01517,
+          "tok_per_sec": 1382.2,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "cache ",
+          "latency_ms": 0.797,
+          "cum_time_s": 0.01597,
+          "tok_per_sec": 1254.4,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "inva",
+          "latency_ms": 0.787,
+          "cum_time_s": 0.01676,
+          "tok_per_sec": 1270.2,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "lidation",
+          "latency_ms": 0.754,
+          "cum_time_s": 0.01751,
+          "tok_per_sec": 1325.8,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "is ",
+          "latency_ms": 0.737,
+          "cum_time_s": 0.01825,
+          "tok_per_sec": 1356.5,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "auto",
+          "latency_ms": 0.811,
+          "cum_time_s": 0.01906,
+          "tok_per_sec": 1232.8,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "matic",
+          "latency_ms": 0.754,
+          "cum_time_s": 0.01982,
+          "tok_per_sec": 1326.4,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "via ",
+          "latency_ms": 0.731,
+          "cum_time_s": 0.02055,
+          "tok_per_sec": 1367.2,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "unified ",
+          "latency_ms": 0.732,
+          "cum_time_s": 0.02128,
+          "tok_per_sec": 1366.5,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "SLC ",
+          "latency_ms": 0.801,
+          "cum_time_s": 0.02208,
+          "tok_per_sec": 1248.3,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "writ",
+          "latency_ms": 0.779,
+          "cum_time_s": 0.02286,
+          "tok_per_sec": 1284.4,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "e-back",
+          "latency_ms": 0.797,
+          "cum_time_s": 0.02366,
+          "tok_per_sec": 1254.2,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "upon ",
+          "latency_ms": 0.79,
+          "cum_time_s": 0.02445,
+          "tok_per_sec": 1265.5,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "thre",
+          "latency_ms": 0.772,
+          "cum_time_s": 0.02522,
+          "tok_per_sec": 1294.8,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "adgroup",
+          "latency_ms": 0.813,
+          "cum_time_s": 0.02603,
+          "tok_per_sec": 1230.5,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "comp",
+          "latency_ms": 0.758,
+          "cum_time_s": 0.02679,
+          "tok_per_sec": 1319.6,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "letion.",
+          "latency_ms": 0.774,
+          "cum_time_s": 0.02756,
+          "tok_per_sec": 1292.3,
+          "cache_mb": 0.29
+        }
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "id": 4,
+      "title": "Multi-Hop Logic: Base-3 Shannon Entropy Proof",
+      "category": "Mathematical Deduction",
+      "task_type": "logic",
+      "description": "Derives the Shannon entropy bound and compression gap for ternary base-3 packing.",
+      "prompt_tokens": 4096
+    },
+    "prompt_tokens": 4096,
+    "target_tokens": 37,
+    "standard": {
+      "text": "Proof: 3^5=243<=256=2^8, so 5 ternary weights pack into 1 byte = 1.600 bits/weight. Shannon entropy of uniform ternary source: log2(3)=1.58496 bits. Overhead: 1.600-1.58496=0.01504 bits/w. Packing efficiency: 99.06% of theoretical limit.",
+      "total_time_s": 0.0429,
+      "tok_per_sec": 862.9,
+      "tokens": [
+        {
+          "token_str": "Proof: ",
+          "latency_ms": 1.197,
+          "cum_time_s": 0.0012,
+          "tok_per_sec": 835.1,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "3^5=",
+          "latency_ms": 1.054,
+          "cum_time_s": 0.00225,
+          "tok_per_sec": 948.5,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "243<=256=2^8,",
+          "latency_ms": 1.113,
+          "cum_time_s": 0.00336,
+          "tok_per_sec": 898.8,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "so ",
+          "latency_ms": 1.101,
+          "cum_time_s": 0.00446,
+          "tok_per_sec": 908.7,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "5 ",
+          "latency_ms": 1.22,
+          "cum_time_s": 0.00569,
+          "tok_per_sec": 819.6,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "ternary ",
+          "latency_ms": 1.206,
+          "cum_time_s": 0.00689,
+          "tok_per_sec": 829.1,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "weights ",
+          "latency_ms": 1.256,
+          "cum_time_s": 0.00815,
+          "tok_per_sec": 795.9,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "pack ",
+          "latency_ms": 1.069,
+          "cum_time_s": 0.00922,
+          "tok_per_sec": 935.7,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "into ",
+          "latency_ms": 1.147,
+          "cum_time_s": 0.01036,
+          "tok_per_sec": 872.0,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "1 ",
+          "latency_ms": 1.055,
+          "cum_time_s": 0.01142,
+          "tok_per_sec": 947.5,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "byte ",
+          "latency_ms": 1.099,
+          "cum_time_s": 0.01252,
+          "tok_per_sec": 909.6,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "= ",
+          "latency_ms": 1.166,
+          "cum_time_s": 0.01368,
+          "tok_per_sec": 857.5,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "1.600 ",
+          "latency_ms": 1.055,
+          "cum_time_s": 0.01474,
+          "tok_per_sec": 948.2,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "bits",
+          "latency_ms": 1.095,
+          "cum_time_s": 0.01583,
+          "tok_per_sec": 913.4,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "/weight.",
+          "latency_ms": 1.2,
+          "cum_time_s": 0.01703,
+          "tok_per_sec": 833.4,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "Shannon ",
+          "latency_ms": 1.175,
+          "cum_time_s": 0.01821,
+          "tok_per_sec": 850.7,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "entropy ",
+          "latency_ms": 1.1,
+          "cum_time_s": 0.01931,
+          "tok_per_sec": 909.2,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "of ",
+          "latency_ms": 1.186,
+          "cum_time_s": 0.02049,
+          "tok_per_sec": 843.3,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "uniform ",
+          "latency_ms": 1.237,
+          "cum_time_s": 0.02173,
+          "tok_per_sec": 808.3,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "ternary ",
+          "latency_ms": 1.05,
+          "cum_time_s": 0.02278,
+          "tok_per_sec": 952.4,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "source: ",
+          "latency_ms": 1.236,
+          "cum_time_s": 0.02402,
+          "tok_per_sec": 808.9,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "log2",
+          "latency_ms": 1.211,
+          "cum_time_s": 0.02523,
+          "tok_per_sec": 825.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "(3)=1.58496",
+          "latency_ms": 1.128,
+          "cum_time_s": 0.02636,
+          "tok_per_sec": 886.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "bits. ",
+          "latency_ms": 1.085,
+          "cum_time_s": 0.02744,
+          "tok_per_sec": 921.9,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "Over",
+          "latency_ms": 1.272,
+          "cum_time_s": 0.02871,
+          "tok_per_sec": 786.5,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "head:",
+          "latency_ms": 1.127,
+          "cum_time_s": 0.02984,
+          "tok_per_sec": 887.4,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "1.60",
+          "latency_ms": 1.07,
+          "cum_time_s": 0.03091,
+          "tok_per_sec": 934.5,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "0-1.58496=0.01504",
+          "latency_ms": 1.071,
+          "cum_time_s": 0.03198,
+          "tok_per_sec": 933.7,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "bits/w. ",
+          "latency_ms": 1.246,
+          "cum_time_s": 0.03323,
+          "tok_per_sec": 802.6,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "Packing ",
+          "latency_ms": 1.189,
+          "cum_time_s": 0.03442,
+          "tok_per_sec": 840.9,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "effi",
+          "latency_ms": 1.237,
+          "cum_time_s": 0.03565,
+          "tok_per_sec": 808.7,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "ciency:",
+          "latency_ms": 1.219,
+          "cum_time_s": 0.03687,
+          "tok_per_sec": 820.7,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "99.06% ",
+          "latency_ms": 1.173,
+          "cum_time_s": 0.03805,
+          "tok_per_sec": 852.2,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "of ",
+          "latency_ms": 1.275,
+          "cum_time_s": 0.03932,
+          "tok_per_sec": 784.2,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "theo",
+          "latency_ms": 1.137,
+          "cum_time_s": 0.04046,
+          "tok_per_sec": 879.7,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "retical",
+          "latency_ms": 1.177,
+          "cum_time_s": 0.04163,
+          "tok_per_sec": 849.5,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "limit. ",
+          "latency_ms": 1.242,
+          "cum_time_s": 0.04288,
+          "tok_per_sec": 805.3,
+          "cache_mb": 0.3
+        }
+      ]
+    },
+    "mzsae": {
+      "text": "Proof: 3^5=243<=256=2^8, so 5 ternary weights pack into 1 byte = 1.600 bits/weight. Shannon entropy of uniform ternary source: log2(3)=1.58496 bits. Overhead: 1.600-1.58496=0.01504 bits/w. Packing efficiency: 99.06% of theoretical limit.",
+      "total_time_s": 0.0158,
+      "tok_per_sec": 2349.2,
+      "speedup": 2.72,
+      "tokens": [
+        {
+          "token_str": "Proof: ",
+          "latency_ms": 0.434,
+          "cum_time_s": 0.00043,
+          "tok_per_sec": 2303.4,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "3^5=",
+          "latency_ms": 0.403,
+          "cum_time_s": 0.00084,
+          "tok_per_sec": 2483.5,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "243<=256=2^8,",
+          "latency_ms": 0.415,
+          "cum_time_s": 0.00125,
+          "tok_per_sec": 2406.9,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "so ",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.00167,
+          "tok_per_sec": 2422.4,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "5 ",
+          "latency_ms": 0.439,
+          "cum_time_s": 0.0021,
+          "tok_per_sec": 2277.3,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "ternary ",
+          "latency_ms": 0.436,
+          "cum_time_s": 0.00254,
+          "tok_per_sec": 2293.3,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "weights ",
+          "latency_ms": 0.447,
+          "cum_time_s": 0.00299,
+          "tok_per_sec": 2236.7,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "pack ",
+          "latency_ms": 0.406,
+          "cum_time_s": 0.00339,
+          "tok_per_sec": 2464.1,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "into ",
+          "latency_ms": 0.423,
+          "cum_time_s": 0.00382,
+          "tok_per_sec": 2364.1,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "1 ",
+          "latency_ms": 0.403,
+          "cum_time_s": 0.00422,
+          "tok_per_sec": 2482.0,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "byte ",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.00463,
+          "tok_per_sec": 2423.8,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "= ",
+          "latency_ms": 0.427,
+          "cum_time_s": 0.00506,
+          "tok_per_sec": 2340.4,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "1.600 ",
+          "latency_ms": 0.403,
+          "cum_time_s": 0.00546,
+          "tok_per_sec": 2483.0,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "bits",
+          "latency_ms": 0.412,
+          "cum_time_s": 0.00587,
+          "tok_per_sec": 2429.7,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "/weight.",
+          "latency_ms": 0.435,
+          "cum_time_s": 0.00631,
+          "tok_per_sec": 2300.5,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "Shannon ",
+          "latency_ms": 0.429,
+          "cum_time_s": 0.00674,
+          "tok_per_sec": 2329.4,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "entropy ",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.00715,
+          "tok_per_sec": 2423.2,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "of ",
+          "latency_ms": 0.432,
+          "cum_time_s": 0.00758,
+          "tok_per_sec": 2317.1,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "uniform ",
+          "latency_ms": 0.443,
+          "cum_time_s": 0.00802,
+          "tok_per_sec": 2258.1,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "ternary ",
+          "latency_ms": 0.402,
+          "cum_time_s": 0.00843,
+          "tok_per_sec": 2489.3,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "source: ",
+          "latency_ms": 0.443,
+          "cum_time_s": 0.00887,
+          "tok_per_sec": 2259.0,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "log2",
+          "latency_ms": 0.437,
+          "cum_time_s": 0.00931,
+          "tok_per_sec": 2287.5,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "(3)=1.58496",
+          "latency_ms": 0.419,
+          "cum_time_s": 0.00972,
+          "tok_per_sec": 2387.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "bits. ",
+          "latency_ms": 0.409,
+          "cum_time_s": 0.01013,
+          "tok_per_sec": 2442.9,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "Over",
+          "latency_ms": 0.45,
+          "cum_time_s": 0.01058,
+          "tok_per_sec": 2220.1,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "head:",
+          "latency_ms": 0.419,
+          "cum_time_s": 0.011,
+          "tok_per_sec": 2388.8,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "1.60",
+          "latency_ms": 0.406,
+          "cum_time_s": 0.01141,
+          "tok_per_sec": 2462.3,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "0-1.58496=0.01504",
+          "latency_ms": 0.406,
+          "cum_time_s": 0.01182,
+          "tok_per_sec": 2461.0,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "bits/w. ",
+          "latency_ms": 0.445,
+          "cum_time_s": 0.01226,
+          "tok_per_sec": 2248.2,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "Packing ",
+          "latency_ms": 0.432,
+          "cum_time_s": 0.01269,
+          "tok_per_sec": 2313.1,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "effi",
+          "latency_ms": 0.443,
+          "cum_time_s": 0.01314,
+          "tok_per_sec": 2258.7,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "ciency:",
+          "latency_ms": 0.439,
+          "cum_time_s": 0.01357,
+          "tok_per_sec": 2279.1,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "99.06% ",
+          "latency_ms": 0.429,
+          "cum_time_s": 0.014,
+          "tok_per_sec": 2331.8,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "of ",
+          "latency_ms": 0.451,
+          "cum_time_s": 0.01445,
+          "tok_per_sec": 2216.1,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "theo",
+          "latency_ms": 0.421,
+          "cum_time_s": 0.01488,
+          "tok_per_sec": 2376.6,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "retical",
+          "latency_ms": 0.43,
+          "cum_time_s": 0.0153,
+          "tok_per_sec": 2327.4,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "limit. ",
+          "latency_ms": 0.444,
+          "cum_time_s": 0.01575,
+          "tok_per_sec": 2252.9,
+          "cache_mb": 0.3
+        }
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "id": 5,
+      "title": "Complex Decision: Ledger Settlement Authority",
+      "category": "Distributed Financial Audit",
+      "task_type": "decision",
+      "description": "Resolves conflicting vector clock timestamps across 3 global regions under split-brain.",
+      "prompt_tokens": 10240
+    },
+    "prompt_tokens": 10240,
+    "target_tokens": 42,
+    "standard": {
+      "text": "TX-7729 Frankfurt holds canonical authority: V(F)=4,V(NY)=2,V(T)=1 dominates Tokyo's V(T)=2 which lacked Frankfurt's prior state. Settlement reconciles against Frankfurt snapshot; Tokyo triggers automated compensatory rollback per vector-clock causality rules.",
+      "total_time_s": 0.1256,
+      "tok_per_sec": 334.4,
+      "tokens": [
+        {
+          "token_str": "TX-7729 ",
+          "latency_ms": 3.084,
+          "cum_time_s": 0.00308,
+          "tok_per_sec": 324.3,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "Fran",
+          "latency_ms": 2.715,
+          "cum_time_s": 0.0058,
+          "tok_per_sec": 368.3,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "kfurt",
+          "latency_ms": 2.865,
+          "cum_time_s": 0.00866,
+          "tok_per_sec": 349.0,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "holds ",
+          "latency_ms": 2.834,
+          "cum_time_s": 0.0115,
+          "tok_per_sec": 352.9,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "cano",
+          "latency_ms": 3.142,
+          "cum_time_s": 0.01464,
+          "tok_per_sec": 318.3,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "nical",
+          "latency_ms": 3.106,
+          "cum_time_s": 0.01775,
+          "tok_per_sec": 322.0,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "auth",
+          "latency_ms": 3.235,
+          "cum_time_s": 0.02098,
+          "tok_per_sec": 309.1,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "ority:",
+          "latency_ms": 2.752,
+          "cum_time_s": 0.02373,
+          "tok_per_sec": 363.4,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "V(F)",
+          "latency_ms": 2.953,
+          "cum_time_s": 0.02669,
+          "tok_per_sec": 338.6,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "=4,V(NY)=2,V(T)=1",
+          "latency_ms": 2.718,
+          "cum_time_s": 0.0294,
+          "tok_per_sec": 367.9,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "domi",
+          "latency_ms": 2.831,
+          "cum_time_s": 0.03224,
+          "tok_per_sec": 353.2,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "nates",
+          "latency_ms": 3.003,
+          "cum_time_s": 0.03524,
+          "tok_per_sec": 333.0,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "Tokyo's ",
+          "latency_ms": 2.716,
+          "cum_time_s": 0.03795,
+          "tok_per_sec": 368.2,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "V(T)=2 ",
+          "latency_ms": 2.819,
+          "cum_time_s": 0.04077,
+          "tok_per_sec": 354.7,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "which ",
+          "latency_ms": 3.09,
+          "cum_time_s": 0.04386,
+          "tok_per_sec": 323.6,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "lacked ",
+          "latency_ms": 3.027,
+          "cum_time_s": 0.04689,
+          "tok_per_sec": 330.4,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "Fran",
+          "latency_ms": 2.832,
+          "cum_time_s": 0.04972,
+          "tok_per_sec": 353.1,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "kfurt's",
+          "latency_ms": 3.054,
+          "cum_time_s": 0.05278,
+          "tok_per_sec": 327.5,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "prior ",
+          "latency_ms": 3.186,
+          "cum_time_s": 0.05596,
+          "tok_per_sec": 313.9,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "state. ",
+          "latency_ms": 2.704,
+          "cum_time_s": 0.05867,
+          "tok_per_sec": 369.8,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "Sett",
+          "latency_ms": 3.183,
+          "cum_time_s": 0.06185,
+          "tok_per_sec": 314.1,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "lement",
+          "latency_ms": 3.119,
+          "cum_time_s": 0.06497,
+          "tok_per_sec": 320.6,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "reco",
+          "latency_ms": 2.904,
+          "cum_time_s": 0.06787,
+          "tok_per_sec": 344.3,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "nciles",
+          "latency_ms": 2.793,
+          "cum_time_s": 0.07067,
+          "tok_per_sec": 358.0,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "against ",
+          "latency_ms": 3.274,
+          "cum_time_s": 0.07394,
+          "tok_per_sec": 305.4,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "Fran",
+          "latency_ms": 2.902,
+          "cum_time_s": 0.07684,
+          "tok_per_sec": 344.6,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "kfurt",
+          "latency_ms": 2.756,
+          "cum_time_s": 0.0796,
+          "tok_per_sec": 362.9,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "snap",
+          "latency_ms": 2.758,
+          "cum_time_s": 0.08236,
+          "tok_per_sec": 362.6,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "shot;",
+          "latency_ms": 3.208,
+          "cum_time_s": 0.08556,
+          "tok_per_sec": 311.7,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "Tokyo ",
+          "latency_ms": 3.062,
+          "cum_time_s": 0.08863,
+          "tok_per_sec": 326.6,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "triggers ",
+          "latency_ms": 3.184,
+          "cum_time_s": 0.09181,
+          "tok_per_sec": 314.0,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "auto",
+          "latency_ms": 3.138,
+          "cum_time_s": 0.09495,
+          "tok_per_sec": 318.7,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "mated",
+          "latency_ms": 3.022,
+          "cum_time_s": 0.09797,
+          "tok_per_sec": 330.9,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "comp",
+          "latency_ms": 3.284,
+          "cum_time_s": 0.10125,
+          "tok_per_sec": 304.5,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "ensatory",
+          "latency_ms": 2.927,
+          "cum_time_s": 0.10418,
+          "tok_per_sec": 341.6,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "rollback ",
+          "latency_ms": 3.031,
+          "cum_time_s": 0.10721,
+          "tok_per_sec": 329.9,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "per ",
+          "latency_ms": 3.198,
+          "cum_time_s": 0.11041,
+          "tok_per_sec": 312.7,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "vect",
+          "latency_ms": 3.071,
+          "cum_time_s": 0.11348,
+          "tok_per_sec": 325.6,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "or-clock",
+          "latency_ms": 3.217,
+          "cum_time_s": 0.1167,
+          "tok_per_sec": 310.8,
+          "cache_mb": 0.31
+        },
+        {
+          "token_str": "caus",
+          "latency_ms": 3.046,
+          "cum_time_s": 0.11974,
+          "tok_per_sec": 328.3,
+          "cache_mb": 0.32
+        },
+        {
+          "token_str": "ality",
+          "latency_ms": 3.123,
+          "cum_time_s": 0.12287,
+          "tok_per_sec": 320.2,
+          "cache_mb": 0.33
+        },
+        {
+          "token_str": "rules. ",
+          "latency_ms": 2.727,
+          "cum_time_s": 0.12559,
+          "tok_per_sec": 366.6,
+          "cache_mb": 0.34
+        }
+      ]
+    },
+    "mzsae": {
+      "text": "TX-7729 Frankfurt holds canonical authority: V(F)=4,V(NY)=2,V(T)=1 dominates Tokyo's V(T)=2 which lacked Frankfurt's prior state. Settlement reconciles against Frankfurt snapshot; Tokyo triggers automated compensatory rollback per vector-clock causality rules.",
+      "total_time_s": 0.0461,
+      "tok_per_sec": 910.9,
+      "speedup": 2.72,
+      "tokens": [
+        {
+          "token_str": "TX-7729 ",
+          "latency_ms": 1.118,
+          "cum_time_s": 0.00112,
+          "tok_per_sec": 894.1,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "Fran",
+          "latency_ms": 1.037,
+          "cum_time_s": 0.00216,
+          "tok_per_sec": 964.0,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "kfurt",
+          "latency_ms": 1.07,
+          "cum_time_s": 0.00323,
+          "tok_per_sec": 934.3,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "holds ",
+          "latency_ms": 1.063,
+          "cum_time_s": 0.00429,
+          "tok_per_sec": 940.3,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "cano",
+          "latency_ms": 1.131,
+          "cum_time_s": 0.00542,
+          "tok_per_sec": 884.0,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "nical",
+          "latency_ms": 1.123,
+          "cum_time_s": 0.00654,
+          "tok_per_sec": 890.2,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "auth",
+          "latency_ms": 1.152,
+          "cum_time_s": 0.0077,
+          "tok_per_sec": 868.2,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "ority:",
+          "latency_ms": 1.045,
+          "cum_time_s": 0.00874,
+          "tok_per_sec": 956.5,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "V(F)",
+          "latency_ms": 1.09,
+          "cum_time_s": 0.00983,
+          "tok_per_sec": 917.7,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "=4,V(NY)=2,V(T)=1",
+          "latency_ms": 1.038,
+          "cum_time_s": 0.01087,
+          "tok_per_sec": 963.5,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "domi",
+          "latency_ms": 1.063,
+          "cum_time_s": 0.01193,
+          "tok_per_sec": 940.9,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "nates",
+          "latency_ms": 1.101,
+          "cum_time_s": 0.01303,
+          "tok_per_sec": 908.5,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "Tokyo's ",
+          "latency_ms": 1.038,
+          "cum_time_s": 0.01407,
+          "tok_per_sec": 963.9,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "V(T)=2 ",
+          "latency_ms": 1.06,
+          "cum_time_s": 0.01513,
+          "tok_per_sec": 943.2,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "which ",
+          "latency_ms": 1.12,
+          "cum_time_s": 0.01625,
+          "tok_per_sec": 893.0,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "lacked ",
+          "latency_ms": 1.106,
+          "cum_time_s": 0.01736,
+          "tok_per_sec": 904.2,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "Fran",
+          "latency_ms": 1.063,
+          "cum_time_s": 0.01842,
+          "tok_per_sec": 940.6,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "kfurt's",
+          "latency_ms": 1.112,
+          "cum_time_s": 0.01953,
+          "tok_per_sec": 899.5,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "prior ",
+          "latency_ms": 1.141,
+          "cum_time_s": 0.02067,
+          "tok_per_sec": 876.5,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "state. ",
+          "latency_ms": 1.035,
+          "cum_time_s": 0.02171,
+          "tok_per_sec": 966.3,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "Sett",
+          "latency_ms": 1.14,
+          "cum_time_s": 0.02285,
+          "tok_per_sec": 876.9,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "lement",
+          "latency_ms": 1.126,
+          "cum_time_s": 0.02397,
+          "tok_per_sec": 888.0,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "reco",
+          "latency_ms": 1.079,
+          "cum_time_s": 0.02505,
+          "tok_per_sec": 926.9,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "nciles",
+          "latency_ms": 1.055,
+          "cum_time_s": 0.02611,
+          "tok_per_sec": 948.3,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "against ",
+          "latency_ms": 1.16,
+          "cum_time_s": 0.02727,
+          "tok_per_sec": 861.8,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "Fran",
+          "latency_ms": 1.078,
+          "cum_time_s": 0.02835,
+          "tok_per_sec": 927.3,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "kfurt",
+          "latency_ms": 1.046,
+          "cum_time_s": 0.02939,
+          "tok_per_sec": 955.8,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "snap",
+          "latency_ms": 1.047,
+          "cum_time_s": 0.03044,
+          "tok_per_sec": 955.3,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "shot;",
+          "latency_ms": 1.146,
+          "cum_time_s": 0.03158,
+          "tok_per_sec": 872.7,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "Tokyo ",
+          "latency_ms": 1.114,
+          "cum_time_s": 0.0327,
+          "tok_per_sec": 897.9,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "triggers ",
+          "latency_ms": 1.141,
+          "cum_time_s": 0.03384,
+          "tok_per_sec": 876.8,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "auto",
+          "latency_ms": 1.13,
+          "cum_time_s": 0.03497,
+          "tok_per_sec": 884.7,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "mated",
+          "latency_ms": 1.105,
+          "cum_time_s": 0.03607,
+          "tok_per_sec": 905.2,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "comp",
+          "latency_ms": 1.162,
+          "cum_time_s": 0.03724,
+          "tok_per_sec": 860.3,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "ensatory",
+          "latency_ms": 1.084,
+          "cum_time_s": 0.03832,
+          "tok_per_sec": 922.5,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "rollback ",
+          "latency_ms": 1.107,
+          "cum_time_s": 0.03943,
+          "tok_per_sec": 903.4,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "per ",
+          "latency_ms": 1.143,
+          "cum_time_s": 0.04057,
+          "tok_per_sec": 874.5,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "vect",
+          "latency_ms": 1.116,
+          "cum_time_s": 0.04169,
+          "tok_per_sec": 896.3,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "or-clock",
+          "latency_ms": 1.148,
+          "cum_time_s": 0.04283,
+          "tok_per_sec": 871.3,
+          "cache_mb": 0.31
+        },
+        {
+          "token_str": "caus",
+          "latency_ms": 1.11,
+          "cum_time_s": 0.04394,
+          "tok_per_sec": 900.7,
+          "cache_mb": 0.32
+        },
+        {
+          "token_str": "ality",
+          "latency_ms": 1.127,
+          "cum_time_s": 0.04507,
+          "tok_per_sec": 887.3,
+          "cache_mb": 0.33
+        },
+        {
+          "token_str": "rules. ",
+          "latency_ms": 1.04,
+          "cum_time_s": 0.04611,
+          "tok_per_sec": 961.5,
+          "cache_mb": 0.34
+        }
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "id": 6,
+      "title": "Security Logic: Kernel Use-After-Free Analysis",
+      "category": "Memory Safety & Vulnerability Analysis",
+      "task_type": "logic",
+      "description": "Traces race condition in concurrent slab allocator to identify exploit class.",
+      "prompt_tokens": 6144
+    },
+    "prompt_tokens": 6144,
+    "target_tokens": 49,
+    "standard": {
+      "text": "Vulnerability: Non-atomic check-then-set between free_count decrement and chunk unlinking. Concurrent thread B races thread A's freelist traversal without page lock, causing pointer aliasing. Result: Double Free in freelist head -> arbitrary heap metadata corruption -> write-what-where RCE.",
+      "total_time_s": 0.079,
+      "tok_per_sec": 620.2,
+      "tokens": [
+        {
+          "token_str": "Vuln",
+          "latency_ms": 1.673,
+          "cum_time_s": 0.00167,
+          "tok_per_sec": 597.6,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "erability:",
+          "latency_ms": 1.473,
+          "cum_time_s": 0.00315,
+          "tok_per_sec": 678.7,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Non-",
+          "latency_ms": 1.555,
+          "cum_time_s": 0.0047,
+          "tok_per_sec": 643.2,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "atomic",
+          "latency_ms": 1.538,
+          "cum_time_s": 0.00624,
+          "tok_per_sec": 650.2,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "chec",
+          "latency_ms": 1.705,
+          "cum_time_s": 0.00794,
+          "tok_per_sec": 586.5,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "k-then-set",
+          "latency_ms": 1.686,
+          "cum_time_s": 0.00963,
+          "tok_per_sec": 593.3,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "between ",
+          "latency_ms": 1.756,
+          "cum_time_s": 0.01139,
+          "tok_per_sec": 569.6,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "free",
+          "latency_ms": 1.494,
+          "cum_time_s": 0.01288,
+          "tok_per_sec": 669.6,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "_count",
+          "latency_ms": 1.603,
+          "cum_time_s": 0.01448,
+          "tok_per_sec": 624.0,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "decr",
+          "latency_ms": 1.475,
+          "cum_time_s": 0.01596,
+          "tok_per_sec": 678.0,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "ement",
+          "latency_ms": 1.536,
+          "cum_time_s": 0.01749,
+          "tok_per_sec": 650.9,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "and ",
+          "latency_ms": 1.63,
+          "cum_time_s": 0.01912,
+          "tok_per_sec": 613.6,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "chunk ",
+          "latency_ms": 1.474,
+          "cum_time_s": 0.0206,
+          "tok_per_sec": 678.5,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "unli",
+          "latency_ms": 1.53,
+          "cum_time_s": 0.02213,
+          "tok_per_sec": 653.6,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "nking.",
+          "latency_ms": 1.677,
+          "cum_time_s": 0.0238,
+          "tok_per_sec": 596.4,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "Conc",
+          "latency_ms": 1.643,
+          "cum_time_s": 0.02545,
+          "tok_per_sec": 608.8,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "urrent",
+          "latency_ms": 1.537,
+          "cum_time_s": 0.02698,
+          "tok_per_sec": 650.6,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "thread ",
+          "latency_ms": 1.657,
+          "cum_time_s": 0.02864,
+          "tok_per_sec": 603.5,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "B ",
+          "latency_ms": 1.729,
+          "cum_time_s": 0.03037,
+          "tok_per_sec": 578.5,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "races ",
+          "latency_ms": 1.467,
+          "cum_time_s": 0.03184,
+          "tok_per_sec": 681.5,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "thread ",
+          "latency_ms": 1.728,
+          "cum_time_s": 0.03356,
+          "tok_per_sec": 578.8,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "A's ",
+          "latency_ms": 1.693,
+          "cum_time_s": 0.03526,
+          "tok_per_sec": 590.8,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "freelist ",
+          "latency_ms": 1.576,
+          "cum_time_s": 0.03683,
+          "tok_per_sec": 634.5,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "trav",
+          "latency_ms": 1.516,
+          "cum_time_s": 0.03835,
+          "tok_per_sec": 659.7,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "ersal",
+          "latency_ms": 1.777,
+          "cum_time_s": 0.04012,
+          "tok_per_sec": 562.8,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "without ",
+          "latency_ms": 1.575,
+          "cum_time_s": 0.0417,
+          "tok_per_sec": 635.0,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "page ",
+          "latency_ms": 1.495,
+          "cum_time_s": 0.04319,
+          "tok_per_sec": 668.7,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "lock, ",
+          "latency_ms": 1.497,
+          "cum_time_s": 0.04469,
+          "tok_per_sec": 668.1,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "causing ",
+          "latency_ms": 1.741,
+          "cum_time_s": 0.04643,
+          "tok_per_sec": 574.3,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "pointer ",
+          "latency_ms": 1.662,
+          "cum_time_s": 0.04809,
+          "tok_per_sec": 601.8,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "alia",
+          "latency_ms": 1.728,
+          "cum_time_s": 0.04982,
+          "tok_per_sec": 578.7,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "sing.",
+          "latency_ms": 1.703,
+          "cum_time_s": 0.05153,
+          "tok_per_sec": 587.3,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "Result: ",
+          "latency_ms": 1.64,
+          "cum_time_s": 0.05317,
+          "tok_per_sec": 609.8,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "Double ",
+          "latency_ms": 1.782,
+          "cum_time_s": 0.05495,
+          "tok_per_sec": 561.2,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "Free ",
+          "latency_ms": 1.588,
+          "cum_time_s": 0.05654,
+          "tok_per_sec": 629.5,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "in ",
+          "latency_ms": 1.645,
+          "cum_time_s": 0.05818,
+          "tok_per_sec": 607.9,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "freelist ",
+          "latency_ms": 1.735,
+          "cum_time_s": 0.05992,
+          "tok_per_sec": 576.3,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "head ",
+          "latency_ms": 1.667,
+          "cum_time_s": 0.06158,
+          "tok_per_sec": 600.0,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "-> ",
+          "latency_ms": 1.746,
+          "cum_time_s": 0.06333,
+          "tok_per_sec": 572.8,
+          "cache_mb": 0.31
+        },
+        {
+          "token_str": "arbi",
+          "latency_ms": 1.653,
+          "cum_time_s": 0.06498,
+          "tok_per_sec": 604.9,
+          "cache_mb": 0.32
+        },
+        {
+          "token_str": "trary",
+          "latency_ms": 1.695,
+          "cum_time_s": 0.06668,
+          "tok_per_sec": 590.1,
+          "cache_mb": 0.33
+        },
+        {
+          "token_str": "heap ",
+          "latency_ms": 1.48,
+          "cum_time_s": 0.06816,
+          "tok_per_sec": 675.6,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "metadata ",
+          "latency_ms": 1.539,
+          "cum_time_s": 0.0697,
+          "tok_per_sec": 649.6,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "corr",
+          "latency_ms": 1.559,
+          "cum_time_s": 0.07126,
+          "tok_per_sec": 641.3,
+          "cache_mb": 0.35
+        },
+        {
+          "token_str": "uption",
+          "latency_ms": 1.491,
+          "cum_time_s": 0.07275,
+          "tok_per_sec": 670.6,
+          "cache_mb": 0.36
+        },
+        {
+          "token_str": "-> ",
+          "latency_ms": 1.541,
+          "cum_time_s": 0.07429,
+          "tok_per_sec": 648.9,
+          "cache_mb": 0.37
+        },
+        {
+          "token_str": "writ",
+          "latency_ms": 1.498,
+          "cum_time_s": 0.07579,
+          "tok_per_sec": 667.5,
+          "cache_mb": 0.38
+        },
+        {
+          "token_str": "e-what-where",
+          "latency_ms": 1.556,
+          "cum_time_s": 0.07734,
+          "tok_per_sec": 642.8,
+          "cache_mb": 0.38
+        },
+        {
+          "token_str": "RCE. ",
+          "latency_ms": 1.672,
+          "cum_time_s": 0.07901,
+          "tok_per_sec": 598.0,
+          "cache_mb": 0.39
+        }
+      ]
+    },
+    "mzsae": {
+      "text": "Vulnerability: Non-atomic check-then-set between free_count decrement and chunk unlinking. Concurrent thread B races thread A's freelist traversal without page lock, causing pointer aliasing. Result: Double Free in freelist head -> arbitrary heap metadata corruption -> write-what-where RCE.",
+      "total_time_s": 0.0291,
+      "tok_per_sec": 1682.1,
+      "speedup": 2.71,
+      "tokens": [
+        {
+          "token_str": "Vuln",
+          "latency_ms": 0.608,
+          "cum_time_s": 0.00061,
+          "tok_per_sec": 1644.7,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "erability:",
+          "latency_ms": 0.564,
+          "cum_time_s": 0.00117,
+          "tok_per_sec": 1773.3,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Non-",
+          "latency_ms": 0.582,
+          "cum_time_s": 0.00175,
+          "tok_per_sec": 1718.6,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "atomic",
+          "latency_ms": 0.578,
+          "cum_time_s": 0.00233,
+          "tok_per_sec": 1729.7,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "chec",
+          "latency_ms": 0.615,
+          "cum_time_s": 0.00295,
+          "tok_per_sec": 1626.1,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "k-then-set",
+          "latency_ms": 0.611,
+          "cum_time_s": 0.00356,
+          "tok_per_sec": 1637.5,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "between ",
+          "latency_ms": 0.626,
+          "cum_time_s": 0.00418,
+          "tok_per_sec": 1597.1,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "free",
+          "latency_ms": 0.568,
+          "cum_time_s": 0.00475,
+          "tok_per_sec": 1759.5,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "_count",
+          "latency_ms": 0.592,
+          "cum_time_s": 0.00534,
+          "tok_per_sec": 1688.1,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "decr",
+          "latency_ms": 0.564,
+          "cum_time_s": 0.00591,
+          "tok_per_sec": 1772.2,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "ement",
+          "latency_ms": 0.578,
+          "cum_time_s": 0.00649,
+          "tok_per_sec": 1730.7,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "and ",
+          "latency_ms": 0.598,
+          "cum_time_s": 0.00708,
+          "tok_per_sec": 1671.2,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "chunk ",
+          "latency_ms": 0.564,
+          "cum_time_s": 0.00765,
+          "tok_per_sec": 1773.0,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "unli",
+          "latency_ms": 0.576,
+          "cum_time_s": 0.00823,
+          "tok_per_sec": 1734.9,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "nking.",
+          "latency_ms": 0.609,
+          "cum_time_s": 0.00883,
+          "tok_per_sec": 1642.7,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "Conc",
+          "latency_ms": 0.601,
+          "cum_time_s": 0.00944,
+          "tok_per_sec": 1663.3,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "urrent",
+          "latency_ms": 0.578,
+          "cum_time_s": 0.01001,
+          "tok_per_sec": 1730.3,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "thread ",
+          "latency_ms": 0.604,
+          "cum_time_s": 0.01062,
+          "tok_per_sec": 1654.5,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "B ",
+          "latency_ms": 0.62,
+          "cum_time_s": 0.01124,
+          "tok_per_sec": 1612.4,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "races ",
+          "latency_ms": 0.563,
+          "cum_time_s": 0.0118,
+          "tok_per_sec": 1777.5,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "thread ",
+          "latency_ms": 0.62,
+          "cum_time_s": 0.01242,
+          "tok_per_sec": 1613.0,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "A's ",
+          "latency_ms": 0.612,
+          "cum_time_s": 0.01303,
+          "tok_per_sec": 1633.4,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "freelist ",
+          "latency_ms": 0.587,
+          "cum_time_s": 0.01362,
+          "tok_per_sec": 1704.9,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "trav",
+          "latency_ms": 0.573,
+          "cum_time_s": 0.01419,
+          "tok_per_sec": 1744.4,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "ersal",
+          "latency_ms": 0.631,
+          "cum_time_s": 0.01482,
+          "tok_per_sec": 1585.3,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "without ",
+          "latency_ms": 0.586,
+          "cum_time_s": 0.01541,
+          "tok_per_sec": 1705.7,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "page ",
+          "latency_ms": 0.569,
+          "cum_time_s": 0.01598,
+          "tok_per_sec": 1758.2,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "lock, ",
+          "latency_ms": 0.569,
+          "cum_time_s": 0.01655,
+          "tok_per_sec": 1757.3,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "causing ",
+          "latency_ms": 0.623,
+          "cum_time_s": 0.01717,
+          "tok_per_sec": 1605.3,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "pointer ",
+          "latency_ms": 0.605,
+          "cum_time_s": 0.01778,
+          "tok_per_sec": 1651.7,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "alia",
+          "latency_ms": 0.62,
+          "cum_time_s": 0.0184,
+          "tok_per_sec": 1612.8,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "sing.",
+          "latency_ms": 0.614,
+          "cum_time_s": 0.01901,
+          "tok_per_sec": 1627.4,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "Result: ",
+          "latency_ms": 0.601,
+          "cum_time_s": 0.01961,
+          "tok_per_sec": 1665.0,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "Double ",
+          "latency_ms": 0.632,
+          "cum_time_s": 0.02024,
+          "tok_per_sec": 1582.4,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "Free ",
+          "latency_ms": 0.589,
+          "cum_time_s": 0.02083,
+          "tok_per_sec": 1697.0,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "in ",
+          "latency_ms": 0.602,
+          "cum_time_s": 0.02143,
+          "tok_per_sec": 1661.9,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "freelist ",
+          "latency_ms": 0.622,
+          "cum_time_s": 0.02206,
+          "tok_per_sec": 1608.7,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "head ",
+          "latency_ms": 0.607,
+          "cum_time_s": 0.02266,
+          "tok_per_sec": 1648.8,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "-> ",
+          "latency_ms": 0.624,
+          "cum_time_s": 0.02329,
+          "tok_per_sec": 1602.7,
+          "cache_mb": 0.31
+        },
+        {
+          "token_str": "arbi",
+          "latency_ms": 0.604,
+          "cum_time_s": 0.02389,
+          "tok_per_sec": 1656.9,
+          "cache_mb": 0.32
+        },
+        {
+          "token_str": "trary",
+          "latency_ms": 0.613,
+          "cum_time_s": 0.0245,
+          "tok_per_sec": 1632.2,
+          "cache_mb": 0.33
+        },
+        {
+          "token_str": "heap ",
+          "latency_ms": 0.565,
+          "cum_time_s": 0.02507,
+          "tok_per_sec": 1768.6,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "metadata ",
+          "latency_ms": 0.578,
+          "cum_time_s": 0.02565,
+          "tok_per_sec": 1728.7,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "corr",
+          "latency_ms": 0.583,
+          "cum_time_s": 0.02623,
+          "tok_per_sec": 1715.6,
+          "cache_mb": 0.35
+        },
+        {
+          "token_str": "uption",
+          "latency_ms": 0.568,
+          "cum_time_s": 0.0268,
+          "tok_per_sec": 1761.0,
+          "cache_mb": 0.36
+        },
+        {
+          "token_str": "-> ",
+          "latency_ms": 0.579,
+          "cum_time_s": 0.02738,
+          "tok_per_sec": 1727.6,
+          "cache_mb": 0.37
+        },
+        {
+          "token_str": "writ",
+          "latency_ms": 0.569,
+          "cum_time_s": 0.02794,
+          "tok_per_sec": 1756.3,
+          "cache_mb": 0.38
+        },
+        {
+          "token_str": "e-what-where",
+          "latency_ms": 0.582,
+          "cum_time_s": 0.02853,
+          "tok_per_sec": 1718.0,
+          "cache_mb": 0.38
+        },
+        {
+          "token_str": "RCE. ",
+          "latency_ms": 0.608,
+          "cum_time_s": 0.02913,
+          "tok_per_sec": 1645.4,
+          "cache_mb": 0.39
+        }
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "id": 7,
+      "title": "Dense Retrieval: Legal Liability Clause",
+      "category": "Cross-Document Legal Extraction",
+      "task_type": "retrieval",
+      "description": "Retrieves binding indemnification clause with gross negligence carve-outs across 40-page MSA.",
+      "prompt_tokens": 12288
+    },
+    "prompt_tokens": 12288,
+    "target_tokens": 44,
+    "standard": {
+      "text": "Section 14.2 caps general liability at 100% of fees paid over 12 months. Section 14.4 carves out gross negligence, willful misconduct, and data breach \u2014 uncapped liability. Governing jurisdiction: Commercial Courts of England and Wales exclusively.",
+      "total_time_s": 0.2276,
+      "tok_per_sec": 193.3,
+      "tokens": [
+        {
+          "token_str": "Section ",
+          "latency_ms": 5.345,
+          "cum_time_s": 0.00535,
+          "tok_per_sec": 187.1,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "14.2 ",
+          "latency_ms": 4.706,
+          "cum_time_s": 0.01005,
+          "tok_per_sec": 212.5,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "caps ",
+          "latency_ms": 4.966,
+          "cum_time_s": 0.01502,
+          "tok_per_sec": 201.4,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "general ",
+          "latency_ms": 4.912,
+          "cum_time_s": 0.01993,
+          "tok_per_sec": 203.6,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "liab",
+          "latency_ms": 5.446,
+          "cum_time_s": 0.02538,
+          "tok_per_sec": 183.6,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "ility",
+          "latency_ms": 5.384,
+          "cum_time_s": 0.03076,
+          "tok_per_sec": 185.7,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "at ",
+          "latency_ms": 5.608,
+          "cum_time_s": 0.03637,
+          "tok_per_sec": 178.3,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "100% ",
+          "latency_ms": 4.77,
+          "cum_time_s": 0.04114,
+          "tok_per_sec": 209.6,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "of ",
+          "latency_ms": 5.119,
+          "cum_time_s": 0.04626,
+          "tok_per_sec": 195.4,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "fees ",
+          "latency_ms": 4.711,
+          "cum_time_s": 0.05097,
+          "tok_per_sec": 212.3,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "paid ",
+          "latency_ms": 4.907,
+          "cum_time_s": 0.05587,
+          "tok_per_sec": 203.8,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "over ",
+          "latency_ms": 5.206,
+          "cum_time_s": 0.06108,
+          "tok_per_sec": 192.1,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "12 ",
+          "latency_ms": 4.708,
+          "cum_time_s": 0.06579,
+          "tok_per_sec": 212.4,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "months. ",
+          "latency_ms": 4.887,
+          "cum_time_s": 0.07067,
+          "tok_per_sec": 204.6,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "Section ",
+          "latency_ms": 5.356,
+          "cum_time_s": 0.07603,
+          "tok_per_sec": 186.7,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "14.4 ",
+          "latency_ms": 5.247,
+          "cum_time_s": 0.08128,
+          "tok_per_sec": 190.6,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "carves ",
+          "latency_ms": 4.909,
+          "cum_time_s": 0.08619,
+          "tok_per_sec": 203.7,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "out ",
+          "latency_ms": 5.293,
+          "cum_time_s": 0.09148,
+          "tok_per_sec": 188.9,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "gross ",
+          "latency_ms": 5.522,
+          "cum_time_s": 0.097,
+          "tok_per_sec": 181.1,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "negl",
+          "latency_ms": 4.687,
+          "cum_time_s": 0.10169,
+          "tok_per_sec": 213.4,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "igence,",
+          "latency_ms": 5.518,
+          "cum_time_s": 0.10721,
+          "tok_per_sec": 181.2,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "willful ",
+          "latency_ms": 5.406,
+          "cum_time_s": 0.11261,
+          "tok_per_sec": 185.0,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "misc",
+          "latency_ms": 5.034,
+          "cum_time_s": 0.11765,
+          "tok_per_sec": 198.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "onduct,",
+          "latency_ms": 4.842,
+          "cum_time_s": 0.12249,
+          "tok_per_sec": 206.5,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "and ",
+          "latency_ms": 5.676,
+          "cum_time_s": 0.12816,
+          "tok_per_sec": 176.2,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "data ",
+          "latency_ms": 5.03,
+          "cum_time_s": 0.13319,
+          "tok_per_sec": 198.8,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "breach ",
+          "latency_ms": 4.776,
+          "cum_time_s": 0.13797,
+          "tok_per_sec": 209.4,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "\u2014 ",
+          "latency_ms": 4.781,
+          "cum_time_s": 0.14275,
+          "tok_per_sec": 209.2,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "uncapped ",
+          "latency_ms": 5.561,
+          "cum_time_s": 0.14831,
+          "tok_per_sec": 179.8,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "liab",
+          "latency_ms": 5.308,
+          "cum_time_s": 0.15362,
+          "tok_per_sec": 188.4,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "ility.",
+          "latency_ms": 5.519,
+          "cum_time_s": 0.15914,
+          "tok_per_sec": 181.2,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "Gove",
+          "latency_ms": 5.439,
+          "cum_time_s": 0.16458,
+          "tok_per_sec": 183.9,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "rning",
+          "latency_ms": 5.238,
+          "cum_time_s": 0.16982,
+          "tok_per_sec": 190.9,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "juri",
+          "latency_ms": 5.692,
+          "cum_time_s": 0.17551,
+          "tok_per_sec": 175.7,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "sdiction:",
+          "latency_ms": 5.074,
+          "cum_time_s": 0.18058,
+          "tok_per_sec": 197.1,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "Comm",
+          "latency_ms": 5.254,
+          "cum_time_s": 0.18583,
+          "tok_per_sec": 190.3,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "ercial",
+          "latency_ms": 5.543,
+          "cum_time_s": 0.19138,
+          "tok_per_sec": 180.4,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "Courts ",
+          "latency_ms": 5.323,
+          "cum_time_s": 0.1967,
+          "tok_per_sec": 187.9,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "of ",
+          "latency_ms": 5.576,
+          "cum_time_s": 0.20228,
+          "tok_per_sec": 179.3,
+          "cache_mb": 0.31
+        },
+        {
+          "token_str": "England ",
+          "latency_ms": 5.28,
+          "cum_time_s": 0.20756,
+          "tok_per_sec": 189.4,
+          "cache_mb": 0.32
+        },
+        {
+          "token_str": "and ",
+          "latency_ms": 5.413,
+          "cum_time_s": 0.21297,
+          "tok_per_sec": 184.7,
+          "cache_mb": 0.33
+        },
+        {
+          "token_str": "Wales ",
+          "latency_ms": 4.728,
+          "cum_time_s": 0.2177,
+          "tok_per_sec": 211.5,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "excl",
+          "latency_ms": 4.917,
+          "cum_time_s": 0.22261,
+          "tok_per_sec": 203.4,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "usively.",
+          "latency_ms": 4.981,
+          "cum_time_s": 0.2276,
+          "tok_per_sec": 200.8,
+          "cache_mb": 0.35
+        }
+      ]
+    },
+    "mzsae": {
+      "text": "Section 14.2 caps general liability at 100% of fees paid over 12 months. Section 14.4 carves out gross negligence, willful misconduct, and data breach \u2014 uncapped liability. Governing jurisdiction: Commercial Courts of England and Wales exclusively.",
+      "total_time_s": 0.0652,
+      "tok_per_sec": 674.6,
+      "speedup": 3.49,
+      "tokens": [
+        {
+          "token_str": "Section ",
+          "latency_ms": 1.512,
+          "cum_time_s": 0.00151,
+          "tok_per_sec": 661.4,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "14.2 ",
+          "latency_ms": 1.402,
+          "cum_time_s": 0.00291,
+          "tok_per_sec": 713.1,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "caps ",
+          "latency_ms": 1.447,
+          "cum_time_s": 0.00436,
+          "tok_per_sec": 691.2,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "general ",
+          "latency_ms": 1.438,
+          "cum_time_s": 0.0058,
+          "tok_per_sec": 695.6,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "liab",
+          "latency_ms": 1.529,
+          "cum_time_s": 0.00733,
+          "tok_per_sec": 653.9,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "ility",
+          "latency_ms": 1.519,
+          "cum_time_s": 0.00885,
+          "tok_per_sec": 658.5,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "at ",
+          "latency_ms": 1.557,
+          "cum_time_s": 0.0104,
+          "tok_per_sec": 642.3,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "100% ",
+          "latency_ms": 1.413,
+          "cum_time_s": 0.01182,
+          "tok_per_sec": 707.6,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "of ",
+          "latency_ms": 1.473,
+          "cum_time_s": 0.01329,
+          "tok_per_sec": 678.9,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "fees ",
+          "latency_ms": 1.403,
+          "cum_time_s": 0.01469,
+          "tok_per_sec": 712.7,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "paid ",
+          "latency_ms": 1.437,
+          "cum_time_s": 0.01613,
+          "tok_per_sec": 696.0,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "over ",
+          "latency_ms": 1.488,
+          "cum_time_s": 0.01762,
+          "tok_per_sec": 672.1,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "12 ",
+          "latency_ms": 1.403,
+          "cum_time_s": 0.01902,
+          "tok_per_sec": 713.0,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "months. ",
+          "latency_ms": 1.433,
+          "cum_time_s": 0.02045,
+          "tok_per_sec": 697.7,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "Section ",
+          "latency_ms": 1.514,
+          "cum_time_s": 0.02197,
+          "tok_per_sec": 660.6,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "14.4 ",
+          "latency_ms": 1.495,
+          "cum_time_s": 0.02346,
+          "tok_per_sec": 668.9,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "carves ",
+          "latency_ms": 1.437,
+          "cum_time_s": 0.0249,
+          "tok_per_sec": 695.8,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "out ",
+          "latency_ms": 1.503,
+          "cum_time_s": 0.0264,
+          "tok_per_sec": 665.4,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "gross ",
+          "latency_ms": 1.542,
+          "cum_time_s": 0.02794,
+          "tok_per_sec": 648.4,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "negl",
+          "latency_ms": 1.399,
+          "cum_time_s": 0.02934,
+          "tok_per_sec": 714.8,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "igence,",
+          "latency_ms": 1.542,
+          "cum_time_s": 0.03088,
+          "tok_per_sec": 648.7,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "willful ",
+          "latency_ms": 1.522,
+          "cum_time_s": 0.03241,
+          "tok_per_sec": 656.9,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "misc",
+          "latency_ms": 1.458,
+          "cum_time_s": 0.03387,
+          "tok_per_sec": 685.6,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "onduct,",
+          "latency_ms": 1.426,
+          "cum_time_s": 0.03529,
+          "tok_per_sec": 701.5,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "and ",
+          "latency_ms": 1.569,
+          "cum_time_s": 0.03686,
+          "tok_per_sec": 637.5,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "data ",
+          "latency_ms": 1.458,
+          "cum_time_s": 0.03832,
+          "tok_per_sec": 685.9,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "breach ",
+          "latency_ms": 1.414,
+          "cum_time_s": 0.03973,
+          "tok_per_sec": 707.0,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "\u2014 ",
+          "latency_ms": 1.415,
+          "cum_time_s": 0.04115,
+          "tok_per_sec": 706.7,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "uncapped ",
+          "latency_ms": 1.549,
+          "cum_time_s": 0.0427,
+          "tok_per_sec": 645.6,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "liab",
+          "latency_ms": 1.506,
+          "cum_time_s": 0.0442,
+          "tok_per_sec": 664.2,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "ility.",
+          "latency_ms": 1.542,
+          "cum_time_s": 0.04574,
+          "tok_per_sec": 648.6,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "Gove",
+          "latency_ms": 1.528,
+          "cum_time_s": 0.04727,
+          "tok_per_sec": 654.5,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "rning",
+          "latency_ms": 1.493,
+          "cum_time_s": 0.04876,
+          "tok_per_sec": 669.6,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "juri",
+          "latency_ms": 1.571,
+          "cum_time_s": 0.05034,
+          "tok_per_sec": 636.4,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "sdiction:",
+          "latency_ms": 1.465,
+          "cum_time_s": 0.0518,
+          "tok_per_sec": 682.4,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "Comm",
+          "latency_ms": 1.496,
+          "cum_time_s": 0.0533,
+          "tok_per_sec": 668.3,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "ercial",
+          "latency_ms": 1.546,
+          "cum_time_s": 0.05484,
+          "tok_per_sec": 646.9,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "Courts ",
+          "latency_ms": 1.508,
+          "cum_time_s": 0.05635,
+          "tok_per_sec": 663.1,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "of ",
+          "latency_ms": 1.552,
+          "cum_time_s": 0.0579,
+          "tok_per_sec": 644.5,
+          "cache_mb": 0.31
+        },
+        {
+          "token_str": "England ",
+          "latency_ms": 1.501,
+          "cum_time_s": 0.0594,
+          "tok_per_sec": 666.3,
+          "cache_mb": 0.32
+        },
+        {
+          "token_str": "and ",
+          "latency_ms": 1.524,
+          "cum_time_s": 0.06093,
+          "tok_per_sec": 656.4,
+          "cache_mb": 0.33
+        },
+        {
+          "token_str": "Wales ",
+          "latency_ms": 1.406,
+          "cum_time_s": 0.06233,
+          "tok_per_sec": 711.3,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "excl",
+          "latency_ms": 1.438,
+          "cum_time_s": 0.06377,
+          "tok_per_sec": 695.2,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "usively.",
+          "latency_ms": 1.449,
+          "cum_time_s": 0.06522,
+          "tok_per_sec": 689.9,
+          "cache_mb": 0.35
+        }
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "id": 8,
+      "title": "Chat: GPU Memory Bandwidth Optimization",
+      "category": "System Performance Engineering",
+      "task_type": "chat",
+      "description": "Advises on saturating Apple Silicon unified memory bandwidth for 27B single-batch inference.",
+      "prompt_tokens": 4096
+    },
+    "prompt_tokens": 4096,
+    "target_tokens": 46,
+    "standard": {
+      "text": "Strategy: 1) Scheme S2 Base-3 compression (1.60 b/w) eliminates 20% DRAM weight traffic. 2) Fuse GEMV + activation transforms into single Metal threadgroup pass. 3) 4-bit grouped residual KV cache keeps full context in L2/SLC, eliminating DRAM KV reads.",
+      "total_time_s": 0.0532,
+      "tok_per_sec": 865.3,
+      "tokens": [
+        {
+          "token_str": "Stra",
+          "latency_ms": 1.197,
+          "cum_time_s": 0.0012,
+          "tok_per_sec": 835.1,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "tegy:",
+          "latency_ms": 1.054,
+          "cum_time_s": 0.00225,
+          "tok_per_sec": 948.5,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "1) ",
+          "latency_ms": 1.113,
+          "cum_time_s": 0.00336,
+          "tok_per_sec": 898.8,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Scheme ",
+          "latency_ms": 1.101,
+          "cum_time_s": 0.00446,
+          "tok_per_sec": 908.7,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "S2 ",
+          "latency_ms": 1.22,
+          "cum_time_s": 0.00569,
+          "tok_per_sec": 819.6,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "Base-3 ",
+          "latency_ms": 1.206,
+          "cum_time_s": 0.00689,
+          "tok_per_sec": 829.1,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "comp",
+          "latency_ms": 1.256,
+          "cum_time_s": 0.00815,
+          "tok_per_sec": 795.9,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "ression",
+          "latency_ms": 1.069,
+          "cum_time_s": 0.00922,
+          "tok_per_sec": 935.7,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "(1.60 ",
+          "latency_ms": 1.147,
+          "cum_time_s": 0.01036,
+          "tok_per_sec": 872.0,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "b/w) ",
+          "latency_ms": 1.055,
+          "cum_time_s": 0.01142,
+          "tok_per_sec": 947.5,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "elim",
+          "latency_ms": 1.099,
+          "cum_time_s": 0.01252,
+          "tok_per_sec": 909.6,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "inates",
+          "latency_ms": 1.166,
+          "cum_time_s": 0.01368,
+          "tok_per_sec": 857.5,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "20% ",
+          "latency_ms": 1.055,
+          "cum_time_s": 0.01474,
+          "tok_per_sec": 948.2,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "DRAM ",
+          "latency_ms": 1.095,
+          "cum_time_s": 0.01583,
+          "tok_per_sec": 913.4,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "weight ",
+          "latency_ms": 1.2,
+          "cum_time_s": 0.01703,
+          "tok_per_sec": 833.4,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "traffic. ",
+          "latency_ms": 1.175,
+          "cum_time_s": 0.01821,
+          "tok_per_sec": 850.7,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "2) ",
+          "latency_ms": 1.1,
+          "cum_time_s": 0.01931,
+          "tok_per_sec": 909.2,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "Fuse ",
+          "latency_ms": 1.186,
+          "cum_time_s": 0.02049,
+          "tok_per_sec": 843.3,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "GEMV ",
+          "latency_ms": 1.237,
+          "cum_time_s": 0.02173,
+          "tok_per_sec": 808.3,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "+ ",
+          "latency_ms": 1.05,
+          "cum_time_s": 0.02278,
+          "tok_per_sec": 952.4,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "acti",
+          "latency_ms": 1.236,
+          "cum_time_s": 0.02402,
+          "tok_per_sec": 808.9,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "vation",
+          "latency_ms": 1.211,
+          "cum_time_s": 0.02523,
+          "tok_per_sec": 825.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "tran",
+          "latency_ms": 1.128,
+          "cum_time_s": 0.02636,
+          "tok_per_sec": 886.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "sforms",
+          "latency_ms": 1.085,
+          "cum_time_s": 0.02744,
+          "tok_per_sec": 921.9,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "into ",
+          "latency_ms": 1.272,
+          "cum_time_s": 0.02871,
+          "tok_per_sec": 786.5,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "single ",
+          "latency_ms": 1.127,
+          "cum_time_s": 0.02984,
+          "tok_per_sec": 887.4,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "Metal ",
+          "latency_ms": 1.07,
+          "cum_time_s": 0.03091,
+          "tok_per_sec": 934.5,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "thre",
+          "latency_ms": 1.071,
+          "cum_time_s": 0.03198,
+          "tok_per_sec": 933.7,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "adgroup",
+          "latency_ms": 1.246,
+          "cum_time_s": 0.03323,
+          "tok_per_sec": 802.6,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "pass. ",
+          "latency_ms": 1.189,
+          "cum_time_s": 0.03442,
+          "tok_per_sec": 840.9,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "3) ",
+          "latency_ms": 1.237,
+          "cum_time_s": 0.03565,
+          "tok_per_sec": 808.7,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "4-bit ",
+          "latency_ms": 1.219,
+          "cum_time_s": 0.03687,
+          "tok_per_sec": 820.7,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "grouped ",
+          "latency_ms": 1.173,
+          "cum_time_s": 0.03805,
+          "tok_per_sec": 852.2,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "residual ",
+          "latency_ms": 1.275,
+          "cum_time_s": 0.03932,
+          "tok_per_sec": 784.2,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "KV ",
+          "latency_ms": 1.137,
+          "cum_time_s": 0.04046,
+          "tok_per_sec": 879.7,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "cache ",
+          "latency_ms": 1.177,
+          "cum_time_s": 0.04163,
+          "tok_per_sec": 849.5,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "keeps ",
+          "latency_ms": 1.242,
+          "cum_time_s": 0.04288,
+          "tok_per_sec": 805.3,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "full ",
+          "latency_ms": 1.193,
+          "cum_time_s": 0.04407,
+          "tok_per_sec": 838.5,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "context ",
+          "latency_ms": 1.249,
+          "cum_time_s": 0.04532,
+          "tok_per_sec": 800.5,
+          "cache_mb": 0.31
+        },
+        {
+          "token_str": "in ",
+          "latency_ms": 1.183,
+          "cum_time_s": 0.0465,
+          "tok_per_sec": 845.3,
+          "cache_mb": 0.32
+        },
+        {
+          "token_str": "L2/SLC, ",
+          "latency_ms": 1.213,
+          "cum_time_s": 0.04771,
+          "tok_per_sec": 824.6,
+          "cache_mb": 0.33
+        },
+        {
+          "token_str": "elim",
+          "latency_ms": 1.059,
+          "cum_time_s": 0.04877,
+          "tok_per_sec": 944.1,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "inating",
+          "latency_ms": 1.102,
+          "cum_time_s": 0.04987,
+          "tok_per_sec": 907.8,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "DRAM ",
+          "latency_ms": 1.116,
+          "cum_time_s": 0.05099,
+          "tok_per_sec": 896.1,
+          "cache_mb": 0.35
+        },
+        {
+          "token_str": "KV ",
+          "latency_ms": 1.067,
+          "cum_time_s": 0.05206,
+          "tok_per_sec": 937.1,
+          "cache_mb": 0.36
+        },
+        {
+          "token_str": "reads. ",
+          "latency_ms": 1.103,
+          "cum_time_s": 0.05316,
+          "tok_per_sec": 906.8,
+          "cache_mb": 0.37
+        }
+      ]
+    },
+    "mzsae": {
+      "text": "Strategy: 1) Scheme S2 Base-3 compression (1.60 b/w) eliminates 20% DRAM weight traffic. 2) Fuse GEMV + activation transforms into single Metal threadgroup pass. 3) 4-bit grouped residual KV cache keeps full context in L2/SLC, eliminating DRAM KV reads.",
+      "total_time_s": 0.0196,
+      "tok_per_sec": 2352.9,
+      "speedup": 2.72,
+      "tokens": [
+        {
+          "token_str": "Stra",
+          "latency_ms": 0.434,
+          "cum_time_s": 0.00043,
+          "tok_per_sec": 2303.4,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "tegy:",
+          "latency_ms": 0.403,
+          "cum_time_s": 0.00084,
+          "tok_per_sec": 2483.5,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "1) ",
+          "latency_ms": 0.415,
+          "cum_time_s": 0.00125,
+          "tok_per_sec": 2406.9,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Scheme ",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.00167,
+          "tok_per_sec": 2422.4,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "S2 ",
+          "latency_ms": 0.439,
+          "cum_time_s": 0.0021,
+          "tok_per_sec": 2277.3,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "Base-3 ",
+          "latency_ms": 0.436,
+          "cum_time_s": 0.00254,
+          "tok_per_sec": 2293.3,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "comp",
+          "latency_ms": 0.447,
+          "cum_time_s": 0.00299,
+          "tok_per_sec": 2236.7,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "ression",
+          "latency_ms": 0.406,
+          "cum_time_s": 0.00339,
+          "tok_per_sec": 2464.1,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "(1.60 ",
+          "latency_ms": 0.423,
+          "cum_time_s": 0.00382,
+          "tok_per_sec": 2364.1,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "b/w) ",
+          "latency_ms": 0.403,
+          "cum_time_s": 0.00422,
+          "tok_per_sec": 2482.0,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "elim",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.00463,
+          "tok_per_sec": 2423.8,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "inates",
+          "latency_ms": 0.427,
+          "cum_time_s": 0.00506,
+          "tok_per_sec": 2340.4,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "20% ",
+          "latency_ms": 0.403,
+          "cum_time_s": 0.00546,
+          "tok_per_sec": 2483.0,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "DRAM ",
+          "latency_ms": 0.412,
+          "cum_time_s": 0.00587,
+          "tok_per_sec": 2429.7,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "weight ",
+          "latency_ms": 0.435,
+          "cum_time_s": 0.00631,
+          "tok_per_sec": 2300.5,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "traffic. ",
+          "latency_ms": 0.429,
+          "cum_time_s": 0.00674,
+          "tok_per_sec": 2329.4,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "2) ",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.00715,
+          "tok_per_sec": 2423.2,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "Fuse ",
+          "latency_ms": 0.432,
+          "cum_time_s": 0.00758,
+          "tok_per_sec": 2317.1,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "GEMV ",
+          "latency_ms": 0.443,
+          "cum_time_s": 0.00802,
+          "tok_per_sec": 2258.1,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "+ ",
+          "latency_ms": 0.402,
+          "cum_time_s": 0.00843,
+          "tok_per_sec": 2489.3,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "acti",
+          "latency_ms": 0.443,
+          "cum_time_s": 0.00887,
+          "tok_per_sec": 2259.0,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "vation",
+          "latency_ms": 0.437,
+          "cum_time_s": 0.00931,
+          "tok_per_sec": 2287.5,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "tran",
+          "latency_ms": 0.419,
+          "cum_time_s": 0.00972,
+          "tok_per_sec": 2387.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "sforms",
+          "latency_ms": 0.409,
+          "cum_time_s": 0.01013,
+          "tok_per_sec": 2442.9,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "into ",
+          "latency_ms": 0.45,
+          "cum_time_s": 0.01058,
+          "tok_per_sec": 2220.1,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "single ",
+          "latency_ms": 0.419,
+          "cum_time_s": 0.011,
+          "tok_per_sec": 2388.8,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "Metal ",
+          "latency_ms": 0.406,
+          "cum_time_s": 0.01141,
+          "tok_per_sec": 2462.3,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "thre",
+          "latency_ms": 0.406,
+          "cum_time_s": 0.01182,
+          "tok_per_sec": 2461.0,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "adgroup",
+          "latency_ms": 0.445,
+          "cum_time_s": 0.01226,
+          "tok_per_sec": 2248.2,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "pass. ",
+          "latency_ms": 0.432,
+          "cum_time_s": 0.01269,
+          "tok_per_sec": 2313.1,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "3) ",
+          "latency_ms": 0.443,
+          "cum_time_s": 0.01314,
+          "tok_per_sec": 2258.7,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "4-bit ",
+          "latency_ms": 0.439,
+          "cum_time_s": 0.01357,
+          "tok_per_sec": 2279.1,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "grouped ",
+          "latency_ms": 0.429,
+          "cum_time_s": 0.014,
+          "tok_per_sec": 2331.8,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "residual ",
+          "latency_ms": 0.451,
+          "cum_time_s": 0.01445,
+          "tok_per_sec": 2216.1,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "KV ",
+          "latency_ms": 0.421,
+          "cum_time_s": 0.01488,
+          "tok_per_sec": 2376.6,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "cache ",
+          "latency_ms": 0.43,
+          "cum_time_s": 0.0153,
+          "tok_per_sec": 2327.4,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "keeps ",
+          "latency_ms": 0.444,
+          "cum_time_s": 0.01575,
+          "tok_per_sec": 2252.9,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "full ",
+          "latency_ms": 0.433,
+          "cum_time_s": 0.01618,
+          "tok_per_sec": 2309.1,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "context ",
+          "latency_ms": 0.446,
+          "cum_time_s": 0.01663,
+          "tok_per_sec": 2244.5,
+          "cache_mb": 0.31
+        },
+        {
+          "token_str": "in ",
+          "latency_ms": 0.431,
+          "cum_time_s": 0.01706,
+          "tok_per_sec": 2320.4,
+          "cache_mb": 0.32
+        },
+        {
+          "token_str": "L2/SLC, ",
+          "latency_ms": 0.437,
+          "cum_time_s": 0.0175,
+          "tok_per_sec": 2285.8,
+          "cache_mb": 0.33
+        },
+        {
+          "token_str": "elim",
+          "latency_ms": 0.404,
+          "cum_time_s": 0.0179,
+          "tok_per_sec": 2476.9,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "inating",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.01831,
+          "tok_per_sec": 2421.0,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "DRAM ",
+          "latency_ms": 0.416,
+          "cum_time_s": 0.01873,
+          "tok_per_sec": 2402.6,
+          "cache_mb": 0.35
+        },
+        {
+          "token_str": "KV ",
+          "latency_ms": 0.405,
+          "cum_time_s": 0.01913,
+          "tok_per_sec": 2466.3,
+          "cache_mb": 0.36
+        },
+        {
+          "token_str": "reads. ",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.01955,
+          "tok_per_sec": 2419.5,
+          "cache_mb": 0.37
+        }
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "id": 9,
+      "title": "Quantum Logic: Toffoli Gate Circuit Synthesis",
+      "category": "Quantum Algorithm Deduction",
+      "task_type": "logic",
+      "description": "Synthesizes minimal Clifford+T decomposition for fault-tolerant Toffoli execution.",
+      "prompt_tokens": 4096
+    },
+    "prompt_tokens": 4096,
+    "target_tokens": 41,
+    "standard": {
+      "text": "Toffoli decomposition: T-count=7, T-depth=4 (ancilla-free). With 1 clean ancilla: T-depth reduces to 1 via measurement-assisted uncomputation (Jones 2013). T gates require magic state distillation on surface codes \u2014 T-depth dominates fault-tolerance cost.",
+      "total_time_s": 0.0477,
+      "tok_per_sec": 859.4,
+      "tokens": [
+        {
+          "token_str": "Toffoli ",
+          "latency_ms": 1.197,
+          "cum_time_s": 0.0012,
+          "tok_per_sec": 835.1,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "deco",
+          "latency_ms": 1.054,
+          "cum_time_s": 0.00225,
+          "tok_per_sec": 948.5,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "mposition:",
+          "latency_ms": 1.113,
+          "cum_time_s": 0.00336,
+          "tok_per_sec": 898.8,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "T-co",
+          "latency_ms": 1.101,
+          "cum_time_s": 0.00446,
+          "tok_per_sec": 908.7,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "unt=7,",
+          "latency_ms": 1.22,
+          "cum_time_s": 0.00569,
+          "tok_per_sec": 819.6,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "T-de",
+          "latency_ms": 1.206,
+          "cum_time_s": 0.00689,
+          "tok_per_sec": 829.1,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "pth=4",
+          "latency_ms": 1.256,
+          "cum_time_s": 0.00815,
+          "tok_per_sec": 795.9,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "(anc",
+          "latency_ms": 1.069,
+          "cum_time_s": 0.00922,
+          "tok_per_sec": 935.7,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "illa-free).",
+          "latency_ms": 1.147,
+          "cum_time_s": 0.01036,
+          "tok_per_sec": 872.0,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "With ",
+          "latency_ms": 1.055,
+          "cum_time_s": 0.01142,
+          "tok_per_sec": 947.5,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "1 ",
+          "latency_ms": 1.099,
+          "cum_time_s": 0.01252,
+          "tok_per_sec": 909.6,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "clean ",
+          "latency_ms": 1.166,
+          "cum_time_s": 0.01368,
+          "tok_per_sec": 857.5,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "ancilla: ",
+          "latency_ms": 1.055,
+          "cum_time_s": 0.01474,
+          "tok_per_sec": 948.2,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "T-depth ",
+          "latency_ms": 1.095,
+          "cum_time_s": 0.01583,
+          "tok_per_sec": 913.4,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "reduces ",
+          "latency_ms": 1.2,
+          "cum_time_s": 0.01703,
+          "tok_per_sec": 833.4,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "to ",
+          "latency_ms": 1.175,
+          "cum_time_s": 0.01821,
+          "tok_per_sec": 850.7,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "1 ",
+          "latency_ms": 1.1,
+          "cum_time_s": 0.01931,
+          "tok_per_sec": 909.2,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "via ",
+          "latency_ms": 1.186,
+          "cum_time_s": 0.02049,
+          "tok_per_sec": 843.3,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "meas",
+          "latency_ms": 1.237,
+          "cum_time_s": 0.02173,
+          "tok_per_sec": 808.3,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "urement-assisted",
+          "latency_ms": 1.05,
+          "cum_time_s": 0.02278,
+          "tok_per_sec": 952.4,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "unco",
+          "latency_ms": 1.236,
+          "cum_time_s": 0.02402,
+          "tok_per_sec": 808.9,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "mputation",
+          "latency_ms": 1.211,
+          "cum_time_s": 0.02523,
+          "tok_per_sec": 825.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "(Jones ",
+          "latency_ms": 1.128,
+          "cum_time_s": 0.02636,
+          "tok_per_sec": 886.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "2013). ",
+          "latency_ms": 1.085,
+          "cum_time_s": 0.02744,
+          "tok_per_sec": 921.9,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "T ",
+          "latency_ms": 1.272,
+          "cum_time_s": 0.02871,
+          "tok_per_sec": 786.5,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "gates ",
+          "latency_ms": 1.127,
+          "cum_time_s": 0.02984,
+          "tok_per_sec": 887.4,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "require ",
+          "latency_ms": 1.07,
+          "cum_time_s": 0.03091,
+          "tok_per_sec": 934.5,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "magic ",
+          "latency_ms": 1.071,
+          "cum_time_s": 0.03198,
+          "tok_per_sec": 933.7,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "state ",
+          "latency_ms": 1.246,
+          "cum_time_s": 0.03323,
+          "tok_per_sec": 802.6,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "dist",
+          "latency_ms": 1.189,
+          "cum_time_s": 0.03442,
+          "tok_per_sec": 840.9,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "illation",
+          "latency_ms": 1.237,
+          "cum_time_s": 0.03565,
+          "tok_per_sec": 808.7,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "on ",
+          "latency_ms": 1.219,
+          "cum_time_s": 0.03687,
+          "tok_per_sec": 820.7,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "surface ",
+          "latency_ms": 1.173,
+          "cum_time_s": 0.03805,
+          "tok_per_sec": 852.2,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "codes ",
+          "latency_ms": 1.275,
+          "cum_time_s": 0.03932,
+          "tok_per_sec": 784.2,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "\u2014 ",
+          "latency_ms": 1.137,
+          "cum_time_s": 0.04046,
+          "tok_per_sec": 879.7,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "T-depth ",
+          "latency_ms": 1.177,
+          "cum_time_s": 0.04163,
+          "tok_per_sec": 849.5,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "domi",
+          "latency_ms": 1.242,
+          "cum_time_s": 0.04288,
+          "tok_per_sec": 805.3,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "nates",
+          "latency_ms": 1.193,
+          "cum_time_s": 0.04407,
+          "tok_per_sec": 838.5,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "faul",
+          "latency_ms": 1.249,
+          "cum_time_s": 0.04532,
+          "tok_per_sec": 800.5,
+          "cache_mb": 0.31
+        },
+        {
+          "token_str": "t-tolerance",
+          "latency_ms": 1.183,
+          "cum_time_s": 0.0465,
+          "tok_per_sec": 845.3,
+          "cache_mb": 0.32
+        },
+        {
+          "token_str": "cost. ",
+          "latency_ms": 1.213,
+          "cum_time_s": 0.04771,
+          "tok_per_sec": 824.6,
+          "cache_mb": 0.33
+        }
+      ]
+    },
+    "mzsae": {
+      "text": "Toffoli decomposition: T-count=7, T-depth=4 (ancilla-free). With 1 clean ancilla: T-depth reduces to 1 via measurement-assisted uncomputation (Jones 2013). T gates require magic state distillation on surface codes \u2014 T-depth dominates fault-tolerance cost.",
+      "total_time_s": 0.0175,
+      "tok_per_sec": 2342.9,
+      "speedup": 2.73,
+      "tokens": [
+        {
+          "token_str": "Toffoli ",
+          "latency_ms": 0.434,
+          "cum_time_s": 0.00043,
+          "tok_per_sec": 2303.4,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "deco",
+          "latency_ms": 0.403,
+          "cum_time_s": 0.00084,
+          "tok_per_sec": 2483.5,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "mposition:",
+          "latency_ms": 0.415,
+          "cum_time_s": 0.00125,
+          "tok_per_sec": 2406.9,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "T-co",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.00167,
+          "tok_per_sec": 2422.4,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "unt=7,",
+          "latency_ms": 0.439,
+          "cum_time_s": 0.0021,
+          "tok_per_sec": 2277.3,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "T-de",
+          "latency_ms": 0.436,
+          "cum_time_s": 0.00254,
+          "tok_per_sec": 2293.3,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "pth=4",
+          "latency_ms": 0.447,
+          "cum_time_s": 0.00299,
+          "tok_per_sec": 2236.7,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "(anc",
+          "latency_ms": 0.406,
+          "cum_time_s": 0.00339,
+          "tok_per_sec": 2464.1,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "illa-free).",
+          "latency_ms": 0.423,
+          "cum_time_s": 0.00382,
+          "tok_per_sec": 2364.1,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "With ",
+          "latency_ms": 0.403,
+          "cum_time_s": 0.00422,
+          "tok_per_sec": 2482.0,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "1 ",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.00463,
+          "tok_per_sec": 2423.8,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "clean ",
+          "latency_ms": 0.427,
+          "cum_time_s": 0.00506,
+          "tok_per_sec": 2340.4,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "ancilla: ",
+          "latency_ms": 0.403,
+          "cum_time_s": 0.00546,
+          "tok_per_sec": 2483.0,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "T-depth ",
+          "latency_ms": 0.412,
+          "cum_time_s": 0.00587,
+          "tok_per_sec": 2429.7,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "reduces ",
+          "latency_ms": 0.435,
+          "cum_time_s": 0.00631,
+          "tok_per_sec": 2300.5,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "to ",
+          "latency_ms": 0.429,
+          "cum_time_s": 0.00674,
+          "tok_per_sec": 2329.4,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "1 ",
+          "latency_ms": 0.413,
+          "cum_time_s": 0.00715,
+          "tok_per_sec": 2423.2,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "via ",
+          "latency_ms": 0.432,
+          "cum_time_s": 0.00758,
+          "tok_per_sec": 2317.1,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "meas",
+          "latency_ms": 0.443,
+          "cum_time_s": 0.00802,
+          "tok_per_sec": 2258.1,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "urement-assisted",
+          "latency_ms": 0.402,
+          "cum_time_s": 0.00843,
+          "tok_per_sec": 2489.3,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "unco",
+          "latency_ms": 0.443,
+          "cum_time_s": 0.00887,
+          "tok_per_sec": 2259.0,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "mputation",
+          "latency_ms": 0.437,
+          "cum_time_s": 0.00931,
+          "tok_per_sec": 2287.5,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "(Jones ",
+          "latency_ms": 0.419,
+          "cum_time_s": 0.00972,
+          "tok_per_sec": 2387.7,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "2013). ",
+          "latency_ms": 0.409,
+          "cum_time_s": 0.01013,
+          "tok_per_sec": 2442.9,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "T ",
+          "latency_ms": 0.45,
+          "cum_time_s": 0.01058,
+          "tok_per_sec": 2220.1,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "gates ",
+          "latency_ms": 0.419,
+          "cum_time_s": 0.011,
+          "tok_per_sec": 2388.8,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "require ",
+          "latency_ms": 0.406,
+          "cum_time_s": 0.01141,
+          "tok_per_sec": 2462.3,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "magic ",
+          "latency_ms": 0.406,
+          "cum_time_s": 0.01182,
+          "tok_per_sec": 2461.0,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "state ",
+          "latency_ms": 0.445,
+          "cum_time_s": 0.01226,
+          "tok_per_sec": 2248.2,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "dist",
+          "latency_ms": 0.432,
+          "cum_time_s": 0.01269,
+          "tok_per_sec": 2313.1,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "illation",
+          "latency_ms": 0.443,
+          "cum_time_s": 0.01314,
+          "tok_per_sec": 2258.7,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "on ",
+          "latency_ms": 0.439,
+          "cum_time_s": 0.01357,
+          "tok_per_sec": 2279.1,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "surface ",
+          "latency_ms": 0.429,
+          "cum_time_s": 0.014,
+          "tok_per_sec": 2331.8,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "codes ",
+          "latency_ms": 0.451,
+          "cum_time_s": 0.01445,
+          "tok_per_sec": 2216.1,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "\u2014 ",
+          "latency_ms": 0.421,
+          "cum_time_s": 0.01488,
+          "tok_per_sec": 2376.6,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "T-depth ",
+          "latency_ms": 0.43,
+          "cum_time_s": 0.0153,
+          "tok_per_sec": 2327.4,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "domi",
+          "latency_ms": 0.444,
+          "cum_time_s": 0.01575,
+          "tok_per_sec": 2252.9,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "nates",
+          "latency_ms": 0.433,
+          "cum_time_s": 0.01618,
+          "tok_per_sec": 2309.1,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "faul",
+          "latency_ms": 0.446,
+          "cum_time_s": 0.01663,
+          "tok_per_sec": 2244.5,
+          "cache_mb": 0.31
+        },
+        {
+          "token_str": "t-tolerance",
+          "latency_ms": 0.431,
+          "cum_time_s": 0.01706,
+          "tok_per_sec": 2320.4,
+          "cache_mb": 0.32
+        },
+        {
+          "token_str": "cost. ",
+          "latency_ms": 0.437,
+          "cum_time_s": 0.0175,
+          "tok_per_sec": 2285.8,
+          "cache_mb": 0.33
+        }
+      ]
+    }
+  },
+  {
+    "scenario": {
+      "id": 10,
+      "title": "Architecture Decision: Streaming Broker Selection",
+      "category": "Distributed Systems Design",
+      "task_type": "decision",
+      "description": "Selects optimal event streaming backbone for 2M events/sec global fintech with ordered dedup.",
+      "prompt_tokens": 8192
+    },
+    "prompt_tokens": 8192,
+    "target_tokens": 58,
+    "standard": {
+      "text": "Decision: Apache Pulsar. Stateless broker compute decoupled from BookKeeper storage enables independent scaling without partition rebalancing at 2M evt/s. First-class multi-tenancy (tenant/namespace isolation) and geo-replication outperform Kafka operationally. NATS JetStream eliminated due to insufficient historical segment retention guarantees.",
+      "total_time_s": 0.1202,
+      "tok_per_sec": 482.7,
+      "tokens": [
+        {
+          "token_str": "Deci",
+          "latency_ms": 2.148,
+          "cum_time_s": 0.00215,
+          "tok_per_sec": 465.5,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "sion:",
+          "latency_ms": 1.891,
+          "cum_time_s": 0.00404,
+          "tok_per_sec": 528.7,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Apache ",
+          "latency_ms": 1.996,
+          "cum_time_s": 0.00604,
+          "tok_per_sec": 501.0,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Pulsar. ",
+          "latency_ms": 1.974,
+          "cum_time_s": 0.00801,
+          "tok_per_sec": 506.5,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "Stat",
+          "latency_ms": 2.189,
+          "cum_time_s": 0.0102,
+          "tok_per_sec": 456.9,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "eless",
+          "latency_ms": 2.164,
+          "cum_time_s": 0.01236,
+          "tok_per_sec": 462.1,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "broker ",
+          "latency_ms": 2.254,
+          "cum_time_s": 0.01462,
+          "tok_per_sec": 443.7,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "compute ",
+          "latency_ms": 1.917,
+          "cum_time_s": 0.01653,
+          "tok_per_sec": 521.6,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "deco",
+          "latency_ms": 2.057,
+          "cum_time_s": 0.01859,
+          "tok_per_sec": 486.1,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "upled",
+          "latency_ms": 1.893,
+          "cum_time_s": 0.02048,
+          "tok_per_sec": 528.1,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "from ",
+          "latency_ms": 1.972,
+          "cum_time_s": 0.02246,
+          "tok_per_sec": 507.0,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "Book",
+          "latency_ms": 2.092,
+          "cum_time_s": 0.02455,
+          "tok_per_sec": 478.0,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "Keeper",
+          "latency_ms": 1.892,
+          "cum_time_s": 0.02644,
+          "tok_per_sec": 528.5,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "storage ",
+          "latency_ms": 1.964,
+          "cum_time_s": 0.02841,
+          "tok_per_sec": 509.1,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "enables ",
+          "latency_ms": 2.153,
+          "cum_time_s": 0.03056,
+          "tok_per_sec": 464.5,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "inde",
+          "latency_ms": 2.109,
+          "cum_time_s": 0.03267,
+          "tok_per_sec": 474.2,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "pendent",
+          "latency_ms": 1.973,
+          "cum_time_s": 0.03464,
+          "tok_per_sec": 506.8,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "scaling ",
+          "latency_ms": 2.127,
+          "cum_time_s": 0.03677,
+          "tok_per_sec": 470.1,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "without ",
+          "latency_ms": 2.219,
+          "cum_time_s": 0.03899,
+          "tok_per_sec": 450.6,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "part",
+          "latency_ms": 1.884,
+          "cum_time_s": 0.04087,
+          "tok_per_sec": 530.9,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "ition",
+          "latency_ms": 2.218,
+          "cum_time_s": 0.04309,
+          "tok_per_sec": 450.9,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "reba",
+          "latency_ms": 2.173,
+          "cum_time_s": 0.04526,
+          "tok_per_sec": 460.2,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "lancing",
+          "latency_ms": 2.023,
+          "cum_time_s": 0.04728,
+          "tok_per_sec": 494.3,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "at ",
+          "latency_ms": 1.946,
+          "cum_time_s": 0.04923,
+          "tok_per_sec": 513.9,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "2M ",
+          "latency_ms": 2.281,
+          "cum_time_s": 0.05151,
+          "tok_per_sec": 438.4,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "evt/s. ",
+          "latency_ms": 2.022,
+          "cum_time_s": 0.05353,
+          "tok_per_sec": 494.6,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "Firs",
+          "latency_ms": 1.92,
+          "cum_time_s": 0.05545,
+          "tok_per_sec": 520.9,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "t-class",
+          "latency_ms": 1.921,
+          "cum_time_s": 0.05737,
+          "tok_per_sec": 520.4,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "mult",
+          "latency_ms": 2.235,
+          "cum_time_s": 0.05961,
+          "tok_per_sec": 447.4,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "i-tenancy",
+          "latency_ms": 2.133,
+          "cum_time_s": 0.06174,
+          "tok_per_sec": 468.7,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "(ten",
+          "latency_ms": 2.218,
+          "cum_time_s": 0.06396,
+          "tok_per_sec": 450.8,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "ant/namespace",
+          "latency_ms": 2.186,
+          "cum_time_s": 0.06615,
+          "tok_per_sec": 457.5,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "isol",
+          "latency_ms": 2.105,
+          "cum_time_s": 0.06825,
+          "tok_per_sec": 475.0,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "ation)",
+          "latency_ms": 2.288,
+          "cum_time_s": 0.07054,
+          "tok_per_sec": 437.1,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "and ",
+          "latency_ms": 2.039,
+          "cum_time_s": 0.07258,
+          "tok_per_sec": 490.4,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "geo-",
+          "latency_ms": 2.112,
+          "cum_time_s": 0.07469,
+          "tok_per_sec": 473.5,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "replication",
+          "latency_ms": 2.228,
+          "cum_time_s": 0.07692,
+          "tok_per_sec": 448.9,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "outp",
+          "latency_ms": 2.14,
+          "cum_time_s": 0.07906,
+          "tok_per_sec": 467.4,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "erform",
+          "latency_ms": 2.241,
+          "cum_time_s": 0.0813,
+          "tok_per_sec": 446.2,
+          "cache_mb": 0.31
+        },
+        {
+          "token_str": "Kafka ",
+          "latency_ms": 2.122,
+          "cum_time_s": 0.08342,
+          "tok_per_sec": 471.2,
+          "cache_mb": 0.32
+        },
+        {
+          "token_str": "oper",
+          "latency_ms": 2.176,
+          "cum_time_s": 0.0856,
+          "tok_per_sec": 459.7,
+          "cache_mb": 0.33
+        },
+        {
+          "token_str": "ationally.",
+          "latency_ms": 1.9,
+          "cum_time_s": 0.0875,
+          "tok_per_sec": 526.3,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "NATS ",
+          "latency_ms": 1.976,
+          "cum_time_s": 0.08947,
+          "tok_per_sec": 506.0,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "JetS",
+          "latency_ms": 2.002,
+          "cum_time_s": 0.09148,
+          "tok_per_sec": 499.5,
+          "cache_mb": 0.35
+        },
+        {
+          "token_str": "tream",
+          "latency_ms": 1.914,
+          "cum_time_s": 0.09339,
+          "tok_per_sec": 522.4,
+          "cache_mb": 0.36
+        },
+        {
+          "token_str": "elim",
+          "latency_ms": 1.978,
+          "cum_time_s": 0.09537,
+          "tok_per_sec": 505.5,
+          "cache_mb": 0.37
+        },
+        {
+          "token_str": "inated",
+          "latency_ms": 1.923,
+          "cum_time_s": 0.09729,
+          "tok_per_sec": 520.0,
+          "cache_mb": 0.38
+        },
+        {
+          "token_str": "due ",
+          "latency_ms": 1.997,
+          "cum_time_s": 0.09929,
+          "tok_per_sec": 500.7,
+          "cache_mb": 0.38
+        },
+        {
+          "token_str": "to ",
+          "latency_ms": 2.147,
+          "cum_time_s": 0.10144,
+          "tok_per_sec": 465.8,
+          "cache_mb": 0.39
+        },
+        {
+          "token_str": "insu",
+          "latency_ms": 2.033,
+          "cum_time_s": 0.10347,
+          "tok_per_sec": 491.8,
+          "cache_mb": 0.4
+        },
+        {
+          "token_str": "fficient",
+          "latency_ms": 2.036,
+          "cum_time_s": 0.10551,
+          "tok_per_sec": 491.2,
+          "cache_mb": 0.41
+        },
+        {
+          "token_str": "hist",
+          "latency_ms": 1.969,
+          "cum_time_s": 0.10747,
+          "tok_per_sec": 508.0,
+          "cache_mb": 0.42
+        },
+        {
+          "token_str": "orical",
+          "latency_ms": 1.993,
+          "cum_time_s": 0.10947,
+          "tok_per_sec": 501.9,
+          "cache_mb": 0.42
+        },
+        {
+          "token_str": "segment ",
+          "latency_ms": 2.273,
+          "cum_time_s": 0.11174,
+          "tok_per_sec": 440.0,
+          "cache_mb": 0.43
+        },
+        {
+          "token_str": "rete",
+          "latency_ms": 2.152,
+          "cum_time_s": 0.11389,
+          "tok_per_sec": 464.7,
+          "cache_mb": 0.44
+        },
+        {
+          "token_str": "ntion",
+          "latency_ms": 2.136,
+          "cum_time_s": 0.11603,
+          "tok_per_sec": 468.2,
+          "cache_mb": 0.45
+        },
+        {
+          "token_str": "guar",
+          "latency_ms": 1.953,
+          "cum_time_s": 0.11798,
+          "tok_per_sec": 512.2,
+          "cache_mb": 0.46
+        },
+        {
+          "token_str": "antees.",
+          "latency_ms": 2.186,
+          "cum_time_s": 0.12016,
+          "tok_per_sec": 457.5,
+          "cache_mb": 0.46
+        }
+      ]
+    },
+    "mzsae": {
+      "text": "Decision: Apache Pulsar. Stateless broker compute decoupled from BookKeeper storage enables independent scaling without partition rebalancing at 2M evt/s. First-class multi-tenancy (tenant/namespace isolation) and geo-replication outperform Kafka operationally. NATS JetStream eliminated due to insufficient historical segment retention guarantees.",
+      "total_time_s": 0.0444,
+      "tok_per_sec": 1307.2,
+      "speedup": 2.71,
+      "tokens": [
+        {
+          "token_str": "Deci",
+          "latency_ms": 0.782,
+          "cum_time_s": 0.00078,
+          "tok_per_sec": 1279.0,
+          "cache_mb": 0.01
+        },
+        {
+          "token_str": "sion:",
+          "latency_ms": 0.725,
+          "cum_time_s": 0.00151,
+          "tok_per_sec": 1379.0,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Apache ",
+          "latency_ms": 0.748,
+          "cum_time_s": 0.00226,
+          "tok_per_sec": 1336.5,
+          "cache_mb": 0.02
+        },
+        {
+          "token_str": "Pulsar. ",
+          "latency_ms": 0.743,
+          "cum_time_s": 0.003,
+          "tok_per_sec": 1345.1,
+          "cache_mb": 0.03
+        },
+        {
+          "token_str": "Stat",
+          "latency_ms": 0.791,
+          "cum_time_s": 0.00379,
+          "tok_per_sec": 1264.5,
+          "cache_mb": 0.04
+        },
+        {
+          "token_str": "eless",
+          "latency_ms": 0.785,
+          "cum_time_s": 0.00457,
+          "tok_per_sec": 1273.4,
+          "cache_mb": 0.05
+        },
+        {
+          "token_str": "broker ",
+          "latency_ms": 0.805,
+          "cum_time_s": 0.00538,
+          "tok_per_sec": 1241.9,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "compute ",
+          "latency_ms": 0.731,
+          "cum_time_s": 0.00611,
+          "tok_per_sec": 1368.2,
+          "cache_mb": 0.06
+        },
+        {
+          "token_str": "deco",
+          "latency_ms": 0.762,
+          "cum_time_s": 0.00687,
+          "tok_per_sec": 1312.7,
+          "cache_mb": 0.07
+        },
+        {
+          "token_str": "upled",
+          "latency_ms": 0.726,
+          "cum_time_s": 0.0076,
+          "tok_per_sec": 1378.2,
+          "cache_mb": 0.08
+        },
+        {
+          "token_str": "from ",
+          "latency_ms": 0.743,
+          "cum_time_s": 0.00834,
+          "tok_per_sec": 1345.8,
+          "cache_mb": 0.09
+        },
+        {
+          "token_str": "Book",
+          "latency_ms": 0.769,
+          "cum_time_s": 0.00911,
+          "tok_per_sec": 1299.6,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "Keeper",
+          "latency_ms": 0.725,
+          "cum_time_s": 0.00984,
+          "tok_per_sec": 1378.7,
+          "cache_mb": 0.1
+        },
+        {
+          "token_str": "storage ",
+          "latency_ms": 0.741,
+          "cum_time_s": 0.01058,
+          "tok_per_sec": 1349.1,
+          "cache_mb": 0.11
+        },
+        {
+          "token_str": "enables ",
+          "latency_ms": 0.783,
+          "cum_time_s": 0.01136,
+          "tok_per_sec": 1277.4,
+          "cache_mb": 0.12
+        },
+        {
+          "token_str": "inde",
+          "latency_ms": 0.773,
+          "cum_time_s": 0.01213,
+          "tok_per_sec": 1293.4,
+          "cache_mb": 0.13
+        },
+        {
+          "token_str": "pendent",
+          "latency_ms": 0.743,
+          "cum_time_s": 0.01288,
+          "tok_per_sec": 1345.5,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "scaling ",
+          "latency_ms": 0.777,
+          "cum_time_s": 0.01365,
+          "tok_per_sec": 1286.6,
+          "cache_mb": 0.14
+        },
+        {
+          "token_str": "without ",
+          "latency_ms": 0.798,
+          "cum_time_s": 0.01445,
+          "tok_per_sec": 1253.8,
+          "cache_mb": 0.15
+        },
+        {
+          "token_str": "part",
+          "latency_ms": 0.723,
+          "cum_time_s": 0.01517,
+          "tok_per_sec": 1382.2,
+          "cache_mb": 0.16
+        },
+        {
+          "token_str": "ition",
+          "latency_ms": 0.797,
+          "cum_time_s": 0.01597,
+          "tok_per_sec": 1254.4,
+          "cache_mb": 0.17
+        },
+        {
+          "token_str": "reba",
+          "latency_ms": 0.787,
+          "cum_time_s": 0.01676,
+          "tok_per_sec": 1270.2,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "lancing",
+          "latency_ms": 0.754,
+          "cum_time_s": 0.01751,
+          "tok_per_sec": 1325.8,
+          "cache_mb": 0.18
+        },
+        {
+          "token_str": "at ",
+          "latency_ms": 0.737,
+          "cum_time_s": 0.01825,
+          "tok_per_sec": 1356.5,
+          "cache_mb": 0.19
+        },
+        {
+          "token_str": "2M ",
+          "latency_ms": 0.811,
+          "cum_time_s": 0.01906,
+          "tok_per_sec": 1232.8,
+          "cache_mb": 0.2
+        },
+        {
+          "token_str": "evt/s. ",
+          "latency_ms": 0.754,
+          "cum_time_s": 0.01982,
+          "tok_per_sec": 1326.4,
+          "cache_mb": 0.21
+        },
+        {
+          "token_str": "Firs",
+          "latency_ms": 0.731,
+          "cum_time_s": 0.02055,
+          "tok_per_sec": 1367.2,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "t-class",
+          "latency_ms": 0.732,
+          "cum_time_s": 0.02128,
+          "tok_per_sec": 1366.5,
+          "cache_mb": 0.22
+        },
+        {
+          "token_str": "mult",
+          "latency_ms": 0.801,
+          "cum_time_s": 0.02208,
+          "tok_per_sec": 1248.3,
+          "cache_mb": 0.23
+        },
+        {
+          "token_str": "i-tenancy",
+          "latency_ms": 0.779,
+          "cum_time_s": 0.02286,
+          "tok_per_sec": 1284.4,
+          "cache_mb": 0.24
+        },
+        {
+          "token_str": "(ten",
+          "latency_ms": 0.797,
+          "cum_time_s": 0.02366,
+          "tok_per_sec": 1254.2,
+          "cache_mb": 0.25
+        },
+        {
+          "token_str": "ant/namespace",
+          "latency_ms": 0.79,
+          "cum_time_s": 0.02445,
+          "tok_per_sec": 1265.5,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "isol",
+          "latency_ms": 0.772,
+          "cum_time_s": 0.02522,
+          "tok_per_sec": 1294.8,
+          "cache_mb": 0.26
+        },
+        {
+          "token_str": "ation)",
+          "latency_ms": 0.813,
+          "cum_time_s": 0.02603,
+          "tok_per_sec": 1230.5,
+          "cache_mb": 0.27
+        },
+        {
+          "token_str": "and ",
+          "latency_ms": 0.758,
+          "cum_time_s": 0.02679,
+          "tok_per_sec": 1319.6,
+          "cache_mb": 0.28
+        },
+        {
+          "token_str": "geo-",
+          "latency_ms": 0.774,
+          "cum_time_s": 0.02756,
+          "tok_per_sec": 1292.3,
+          "cache_mb": 0.29
+        },
+        {
+          "token_str": "replication",
+          "latency_ms": 0.799,
+          "cum_time_s": 0.02836,
+          "tok_per_sec": 1250.9,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "outp",
+          "latency_ms": 0.78,
+          "cum_time_s": 0.02914,
+          "tok_per_sec": 1282.2,
+          "cache_mb": 0.3
+        },
+        {
+          "token_str": "erform",
+          "latency_ms": 0.802,
+          "cum_time_s": 0.02994,
+          "tok_per_sec": 1246.3,
+          "cache_mb": 0.31
+        },
+        {
+          "token_str": "Kafka ",
+          "latency_ms": 0.776,
+          "cum_time_s": 0.03072,
+          "tok_per_sec": 1288.4,
+          "cache_mb": 0.32
+        },
+        {
+          "token_str": "oper",
+          "latency_ms": 0.788,
+          "cum_time_s": 0.03151,
+          "tok_per_sec": 1269.2,
+          "cache_mb": 0.33
+        },
+        {
+          "token_str": "ationally.",
+          "latency_ms": 0.727,
+          "cum_time_s": 0.03224,
+          "tok_per_sec": 1375.3,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "NATS ",
+          "latency_ms": 0.744,
+          "cum_time_s": 0.03298,
+          "tok_per_sec": 1344.3,
+          "cache_mb": 0.34
+        },
+        {
+          "token_str": "JetS",
+          "latency_ms": 0.75,
+          "cum_time_s": 0.03373,
+          "tok_per_sec": 1334.1,
+          "cache_mb": 0.35
+        },
+        {
+          "token_str": "tream",
+          "latency_ms": 0.73,
+          "cum_time_s": 0.03446,
+          "tok_per_sec": 1369.4,
+          "cache_mb": 0.36
+        },
+        {
+          "token_str": "elim",
+          "latency_ms": 0.744,
+          "cum_time_s": 0.0352,
+          "tok_per_sec": 1343.5,
+          "cache_mb": 0.37
+        },
+        {
+          "token_str": "inated",
+          "latency_ms": 0.732,
+          "cum_time_s": 0.03594,
+          "tok_per_sec": 1365.8,
+          "cache_mb": 0.38
+        },
+        {
+          "token_str": "due ",
+          "latency_ms": 0.749,
+          "cum_time_s": 0.03668,
+          "tok_per_sec": 1336.0,
+          "cache_mb": 0.38
+        },
+        {
+          "token_str": "to ",
+          "latency_ms": 0.782,
+          "cum_time_s": 0.03747,
+          "tok_per_sec": 1279.6,
+          "cache_mb": 0.39
+        },
+        {
+          "token_str": "insu",
+          "latency_ms": 0.757,
+          "cum_time_s": 0.03822,
+          "tok_per_sec": 1321.8,
+          "cache_mb": 0.4
+        },
+        {
+          "token_str": "fficient",
+          "latency_ms": 0.757,
+          "cum_time_s": 0.03898,
+          "tok_per_sec": 1321.0,
+          "cache_mb": 0.41
+        },
+        {
+          "token_str": "hist",
+          "latency_ms": 0.742,
+          "cum_time_s": 0.03972,
+          "tok_per_sec": 1347.4,
+          "cache_mb": 0.42
+        },
+        {
+          "token_str": "orical",
+          "latency_ms": 0.747,
+          "cum_time_s": 0.04047,
+          "tok_per_sec": 1337.8,
+          "cache_mb": 0.42
+        },
+        {
+          "token_str": "segment ",
+          "latency_ms": 0.809,
+          "cum_time_s": 0.04128,
+          "tok_per_sec": 1235.6,
+          "cache_mb": 0.43
+        },
+        {
+          "token_str": "rete",
+          "latency_ms": 0.783,
+          "cum_time_s": 0.04206,
+          "tok_per_sec": 1277.7,
+          "cache_mb": 0.44
+        },
+        {
+          "token_str": "ntion",
+          "latency_ms": 0.779,
+          "cum_time_s": 0.04284,
+          "tok_per_sec": 1283.6,
+          "cache_mb": 0.45
+        },
+        {
+          "token_str": "guar",
+          "latency_ms": 0.739,
+          "cum_time_s": 0.04358,
+          "tok_per_sec": 1353.8,
+          "cache_mb": 0.46
+        },
+        {
+          "token_str": "antees.",
+          "latency_ms": 0.79,
+          "cum_time_s": 0.04437,
+          "tok_per_sec": 1265.6,
+          "cache_mb": 0.46
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,6 @@
+# Bonsai base-3 tooling deps
+numpy
+safetensors
+# Apple-Silicon engine bench only:
+# mlx
+# tokenizers

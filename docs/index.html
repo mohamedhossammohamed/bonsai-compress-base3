@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Base-3 Ternary Compression — Pack Tighter, Decode Faster</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+<nav class="top">
+  <span>bonsai-compress-base3 · Research</span>
+  <span><a href="#scheme">Scheme</a><a href="#results">Results</a><a href="#engine">Engine</a><a href="https://github.com/mohamedhossammohamed/bonsai-compress-base3">Code</a></span>
+</nav>
+
+<p class="kicker">Open source · Lossless · Measured on Bonsai-27B</p>
+<h1>Ternary weights, packed in base 3, decoded in registers — 1.6 bits each, zero loss, faster every token.</h1>
+<p class="sub">Five trits fit in one byte (3⁵=243≤256). The repack shrinks a 27B ternary model <b>6.26 → 5.00 GB</b> and cuts per-layer decode <b>1.26×</b> — bit-exact, no retraining, no calibration. The fused engine around it decodes <b>2–3× faster</b> than MLX SDPA.</p>
+<p class="meta">September 2026 · Apple Silicon measurements · Weights not shipped — code and proofs only.</p>
+
+<div class="links">
+  <a class="btn primary" href="https://github.com/mohamedhossammohamed/bonsai-compress-base3">GitHub repo</a>
+  <a class="btn" href="https://github.com/mohamedhossammohamed/bonsai-compress-base3/blob/main/results/trials.md">Trial logs</a>
+</div>
+
+<h2 id="scheme">Scheme S2 in one picture</h2>
+<div class="pipe">
+  <div><b>Pack</b><span>16 trits × 5 words → 80 trits → 16 bytes. 2.00 → 1.60 b/w, streaming, &lt;500MB RAM.</span></div>
+  <div><b>Stream</b><span>Out-of-core mmap streamer pages tiles on demand; paged KV, 10.5GB guard on 16GB Macs.</span></div>
+  <div><b>Decode</b><span>Base-3 unpack + scale fused into GEMV in registers/Metal. 0.4566 → 0.3614 ms/layer.</span></div>
+</div>
+<p>Because 243 of 256 byte values are valid trit-quintuples, any byte decodes to exactly 5 trits — the mapping is an arithmetic identity, so reconstruction error is zero by construction, not by benchmark. Full proofs: <code>THEORY_S2.md</code>.</p>
+
+<h2 id="results">Measured results</h2>
+<div class="card">
+<table>
+<tr><th></th><th>Before</th><th>After</th></tr>
+<tr><td>Bits / weight</td><td>2.00 (uint32-packed)</td><td class="good">1.60 (base-3)</td></tr>
+<tr><td>Bonsai-27B footprint</td><td>6.26 GB</td><td class="good">5.00 GB</td></tr>
+<tr><td>Per-layer GEMV</td><td>0.4566 ms</td><td class="good">0.3614 ms · 1.26×</td></tr>
+<tr><td>Reconstruction error</td><td>—</td><td class="good">0 (bit-exact)</td></tr>
+</table>
+</div>
+<div class="card">
+<table>
+<tr><th>Bonsai-27B ctx</th><th>Fused tok/s</th><th>vs MLX SDPA</th><th>Traffic cut</th></tr>
+<tr><td>4k</td><td>2341</td><td class="good">2.73×</td><td>3.16×</td></tr>
+<tr><td>8k</td><td>1300</td><td class="good">2.72×</td><td>3.22×</td></tr>
+<tr><td>16k</td><td>673</td><td class="good">2.55×</td><td>3.25×</td></tr>
+<tr><td>32k</td><td>291</td><td class="good">2.49×</td><td>3.27×</td></tr>
+<tr><td>64k</td><td>175</td><td class="good">3.31×</td><td>3.27×</td></tr>
+</table>
+</div>
+<div class="note"><strong>Two mechanisms, one page.</strong> The repack (lossless math) and the fused decode engine (measured speedups) are independent — either works without the other. Model <em>quality</em> lives in the upstream ternary checkpoint, which is not evaluated or shipped here.</div>
+
+<h2 id="engine">Serving architecture</h2>
+<p>64-layer hybrid (48 Gated-DeltaNet linear attention + 16 full GQA with FWHT), <code>BonsaiWeightStreamer</code> out-of-core paging, <code>NGramDrafter</code> speculative decoding, Metal layer kernels and a C dequant core — all in <code>runtime/</code>, with an OpenAI-style server (<code>bonsai_server.py</code>).</p>
+
+<h2>Reproduce</h2>
+<pre>python code/convert_to_base3.py --input model-2bit.safetensors --output model-base3.safetensors
+python code/benchmark_ternary_transmission_suite.py --weights model-base3.safetensors
+python runtime/bonsai_server.py --model-path model-base3.safetensors</pre>
+<p>Bring your own ternary checkpoint — this repo ships code, proofs and logs only. Agent-ready instructions: <code>AGENT_SETUP.md</code>.</p>
+
+<footer>bonsai-compress-base3 · lossless compression for faster decoding · <a href="https://github.com/mohamedhossammohamed/bonsai-compress-base3">GitHub</a></footer>
+</div>
+</body>
+</html>
