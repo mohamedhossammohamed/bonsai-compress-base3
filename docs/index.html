@@ -56,6 +56,9 @@ python code/benchmark_ternary_transmission_suite.py --weights model-base3.safete
 python runtime/bonsai_server.py --model-path model-base3.safetensors</pre>
 <p>Bring your own ternary checkpoint — this repo ships code, proofs and logs only. Agent-ready instructions: <code>AGENT_SETUP.md</code>.</p>
 
+<h2>Prior art</h2>
+<p>The 5-trits-per-byte identity (3⁵=243≤256) is established work — see TENET, lut_mm and bitnet.cpp. This project is the open Apple Silicon / MLX implementation around it: streaming repacker, fused Metal GEMV, out-of-core 27B serving. Full attribution: <a href="https://github.com/mohamedhossammohamed/bonsai-compress-base3/blob/main/RELATED_WORK.md">RELATED_WORK.md</a>.</p>
+
 <footer>bonsai-compress-base3 · lossless compression for faster decoding · <a href="https://github.com/mohamedhossammohamed/bonsai-compress-base3">GitHub</a></footer>
 </div>
 </body>
