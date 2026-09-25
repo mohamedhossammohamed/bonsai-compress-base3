@@ -35,6 +35,17 @@ Credit where it is due:
 - **Speculative decoding** (Leviathan et al.; Chen et al.) — draft-and-verify
   pattern behind `NGramDrafter`.
 
+## A note on independent derivation
+
+The packing construction in this repo was derived independently in the course
+of this project — the idea was directed here, the parameters were tuned with
+project-run statistical fitting code, and the implementation plus all
+measurements are original work (committed September 2026). It converges with
+the published results above (TENET 2025, lut_mm, bitnet.cpp), which predate
+it: this is convergent discovery, honestly stated. Priority on the identity
+belongs to the earlier publications; the derivation path, the MLX/Metal
+implementation, the serving stack, and every logged number here are ours.
+
 ## What this repo adds (the honest delta)
 
 1. A **streaming 2-bit-uint32 → base-3 repacker** for MLX-format ternary
