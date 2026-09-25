@@ -25,6 +25,21 @@ Target architecture: 64-layer hybrid (48 Gated-DeltaNet linear attention +
 16 full GQA), out-of-core mmap weight streaming, paged KV, speculative
 `NGramDrafter` — see `runtime/bonsai_engine.py`.
 
+## Inference: decompress on the fly while decoding
+
+Weights stay packed on the bus and open **inside the GPU kernel**:
+
+- `runtime/metal_base3.py` — Metal Shading Language sources (JIT-compiled):
+  byte→trit unpack kernel plus a **fused GEMV kernel** that gathers trits from
+  a 256-entry register LUT, applies per-group scales, `simd_sum`-reduces, and
+  writes the output — never materializing decompressed weights.
+- `runtime/base3_linear.py` — `Base3Linear`, a drop-in MLX `Linear` replacement
+  that decodes on GPU for GEMV (M=1 decode tokens).
+- `runtime/dequant.c` — portable CPU fallback for the same unpack.
+- `tests/test_base3_equivalence.py` — bit-exactness check vs standard 2-bit matmul.
+- `runtime/bonsai_layer.h/.mm` — Metal host coordinator (needs an external
+  `MTLLibrary` + registry header; included for reference, not standalone).
+
 ## Bring your own weights
 
 ```bash

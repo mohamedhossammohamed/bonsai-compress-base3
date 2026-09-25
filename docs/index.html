@@ -48,6 +48,7 @@
 
 <h2 id="engine">Serving architecture</h2>
 <p>64-layer hybrid (48 Gated-DeltaNet linear attention + 16 full GQA with FWHT), <code>BonsaiWeightStreamer</code> out-of-core paging, <code>NGramDrafter</code> speculative decoding, Metal layer kernels and a C dequant core — all in <code>runtime/</code>, with an OpenAI-style server (<code>bonsai_server.py</code>).</p>
+<p>The key file is <code>runtime/metal_base3.py</code>: Metal kernels that unpack base-3 bytes to trits and run <strong>fused GEMV inside the same kernel</strong> — weights are never decompressed to memory, only to registers on the way into the dot product. <code>Base3Linear</code> wraps this as a drop-in MLX layer; <code>tests/test_base3_equivalence.py</code> checks bit-exactness.</p>
 
 <h2>Reproduce</h2>
 <pre>python code/convert_to_base3.py --input model-2bit.safetensors --output model-base3.safetensors
