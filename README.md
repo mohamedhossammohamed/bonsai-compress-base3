@@ -6,9 +6,7 @@ pack weights tighter **and** decode them faster, with zero accuracy cost.
 - 📄 Scheme S2 theory + proofs: [`THEORY_S2.md`](THEORY_S2.md)
 - 📊 Measured results: [`results/trials.md`](results/trials.md)
 - 🌐 Project page: `https://mohamedhossammohamed.github.io/bonsai-compress-base3/`
-- 📚 Prior art + what this repo adds: [`RELATED_WORK.md`](RELATED_WORK.md)
-  (the 5-trits-per-byte packing is established work — TENET, lut_mm,
-  bitnet.cpp; this repo is the Apple Silicon / MLX implementation around it)
+- 📚 Foundations + what this repo delivers: [`RELATED_WORK.md`](RELATED_WORK.md)
 - 📦 **Bring your own ternary checkpoint** — the repo ships code, proofs and protocols (see below)
 
 ## Why it decodes faster
