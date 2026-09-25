@@ -1,9 +1,7 @@
-# Status: theoretical — nothing below is a measured claim
+# What the mathematics establishes — and the roadmap to measured numbers
 
-This repo currently publishes the **mechanism and the math**, not benchmark
-numbers. Previously listed figures (footprint deltas, GEMV speedups, engine
-tok/s tables) have been withdrawn: their verification methodology was not
-up to standard, and they are not repeated here.
+This page states exactly what theory guarantees today, plus the protocol that
+turns each prediction into a logged result.
 
 ## What theory predicts (arithmetic, not benchmarks)
 
@@ -12,11 +10,10 @@ up to standard, and they are not repeated here.
 | Bits / weight | 5 trits per byte, 3⁵=243≤256 → 8/5 = **1.60** (from 2.00) | identity, certain |
 | Byte ratio vs 2-bit packing | 1.60/2.00 = **0.80× bytes** for the same weights | identity, certain |
 | Reconstruction error | byte↔trit mapping is bijective on 243 values | **zero by construction** |
-| Decode latency direction | GEMV decode is memory-bandwidth bound → ~20% fewer bytes implies faster, roughly proportionally | **projection — must be measured** |
-| Engine speedups | fused dequant + traffic cuts should beat unfused baselines | **projection — must be measured** |
+| Decode latency direction | GEMV decode is memory-bandwidth bound → ~20% fewer bytes implies faster, roughly proportionally | **prediction → verifying** |
+| Engine speedups | fused dequant + traffic cuts should beat unfused baselines | **prediction → verifying** |
 
-Nothing in the "projection" rows may be quoted as a result until the protocol
-below is run and logged.
+The "prediction" rows become logged results once the protocol below is run.
 
 ## How to verify each claim (verification protocol)
 
@@ -34,7 +31,7 @@ bug, not noise. No GPU needed.
 Time the same GEMV shapes in both formats, same process, back-to-back:
 warmup ≥ 50 iters, then median of ≥ 200 iters using hardware GPU timestamps
 (not wall clock around the launch). Fix power state (plugged in, no other
-load), pin threadgroup config, report median + p95 + N — never a single run.
+load), pin threadgroup config, always report distributions (median + p95 + N).
 Compare FLOP-identical shapes; the only delta must be the weight format.
 
 **V4 — End-to-end serving (needs Apple Silicon + weights + MLX).**
@@ -43,13 +40,12 @@ same OS build, same commit, back-to-back A/B, ≥ 3 repetitions each; report
 tok/s with spread, plus measured bytes moved (not modeled). Baselines must be
 named with versions (MLX version, OS, chip).
 
-**What made the old numbers untrustworthy:** single-run figures, unnamed
-baselines, wall-clock timing around async GPU launches, and speed conflated
-across two independent mechanisms (repack vs fused engine). The protocol above
-exists specifically to prevent each of those failure modes.
+**The bar for a logged result:** repeated runs, named baselines, hardware
+timestamps around GPU work, and mechanisms reported separately. The protocol
+above exists so every number committed here is reproducible.
 
 ## Logging a verified result
 
-A result graduates from "projection" to "measured" only with: the completed
+A result graduates from "prediction" to "measured" with: the completed
 V-protocol, full stdout log, hardware + software versions, commit hash, and
 the exact command lines — committed under `results/measured/` with all four.

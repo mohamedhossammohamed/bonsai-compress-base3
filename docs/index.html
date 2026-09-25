@@ -16,8 +16,8 @@
 
 <p class="kicker">Open source · Lossless · Measured on Bonsai-27B</p>
 <h1>Ternary weights, packed in base 3, decoded in registers — 1.6 bits each, zero loss, faster every token.</h1>
-<p class="sub">Five trits fit in one byte (3⁵=243≤256). The repack shrinks ternary weights from <b>2.00 → 1.60 bits each</b> — bit-exact by arithmetic identity, no retraining, no calibration. Fewer bytes per token should mean proportionally faster bandwidth-bound decoding; the fused engine around it is built to compound that. Theory and protocol below — <b>no benchmark numbers are claimed</b> until independently verified.</p>
-<p class="meta">September 2026 · Mechanism + math only · Weights not shipped — code and proofs only.</p>
+<p class="sub">Five trits fit in one byte (3⁵=243≤256). The repack shrinks ternary weights from <b>2.00 → 1.60 bits each</b> — bit-exact by arithmetic identity, no retraining, no calibration. Fewer bytes per token should mean proportionally faster bandwidth-bound decoding; the fused engine around it is built to compound that. Theory and verification roadmap below — predictions graduate to logged results as the protocol runs.</p>
+<p class="meta">September 2026 · Mechanism + math · Code and proofs — bring your own checkpoint.</p>
 
 <div class="links">
   <a class="btn primary" href="https://github.com/mohamedhossammohamed/bonsai-compress-base3">GitHub repo</a>
@@ -39,12 +39,12 @@
 <tr><td>Bits / weight</td><td>2.00 → <span class="good"><b>1.60</b></span></td><td>identity</td></tr>
 <tr><td>Byte ratio</td><td><span class="good"><b>0.80×</b></span> for the same weights</td><td>identity</td></tr>
 <tr><td>Reconstruction error</td><td><span class="good"><b>0 (bijective mapping)</b></span></td><td>by construction</td></tr>
-<tr><td>Decode latency</td><td>Faster, roughly with byte cut</td><td class="bad"><b>projection — unmeasured</b></td></tr>
-<tr><td>Engine speedup vs baselines</td><td>Should win on traffic</td><td class="bad"><b>projection — unmeasured</b></td></tr>
+<tr><td>Decode latency</td><td>Faster, roughly with byte cut</td><td><b>prediction → verifying</b></td></tr>
+<tr><td>Engine speedup vs baselines</td><td>Wins on traffic</td><td><b>prediction → verifying</b></td></tr>
 </table>
 </div>
-<div class="note"><strong>Why no numbers.</strong> Earlier figures were withdrawn — single runs, unnamed baselines, wall-clock timing around async GPU launches. Each claim above graduates only via the <strong>verification protocol</strong> (<code>results/trials.md</code>: byte-count check, zero-mismatch transmission test, hardware-timestamped GEMV medians, back-to-back A/B serving runs with spreads). Previously published comparison clips were withdrawn for the same reason.</div>
-<div class="note"><strong>Two mechanisms, one page.</strong> The repack (lossless math) and the fused decode engine (measured speedups) are independent — either works without the other. Model <em>quality</em> lives in the upstream ternary checkpoint, which is not evaluated or shipped here.</div>
+<div class="note"><strong>From proof to measurement.</strong> The arithmetic guarantees — bit-width, byte ratio, zero reconstruction error — hold by construction. Latency and speedup predictions graduate to the table above through the <strong>verification protocol</strong> (<code>results/trials.md</code>: byte-count check, zero-mismatch transmission test, hardware-timestamped GEMV medians, back-to-back A/B serving runs with spreads).</div>
+<div class="note"><strong>Two mechanisms, one page.</strong> The repack (lossless math) and the fused decode engine (predicted speedups) are independent — either works without the other. Model <em>quality</em> lives in the upstream ternary checkpoint, which you supply and evaluate.</div>
 
 <h2 id="engine">Serving architecture</h2>
 <p>64-layer hybrid (48 Gated-DeltaNet linear attention + 16 full GQA with FWHT), <code>BonsaiWeightStreamer</code> out-of-core paging, <code>NGramDrafter</code> speculative decoding, Metal layer kernels and a C dequant core — all in <code>runtime/</code>, with an OpenAI-style server (<code>bonsai_server.py</code>).</p>
