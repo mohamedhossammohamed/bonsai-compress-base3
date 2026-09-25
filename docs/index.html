@@ -16,8 +16,8 @@
 
 <p class="kicker">Open source · Lossless · Measured on Bonsai-27B</p>
 <h1>Ternary weights, packed in base 3, decoded in registers — 1.6 bits each, zero loss, faster every token.</h1>
-<p class="sub">Five trits fit in one byte (3⁵=243≤256). The repack shrinks a 27B ternary model <b>6.26 → 5.00 GB</b> and cuts per-layer decode <b>1.26×</b> — bit-exact, no retraining, no calibration. The fused engine around it decodes <b>2–3× faster</b> than MLX SDPA.</p>
-<p class="meta">September 2026 · Apple Silicon measurements · Weights not shipped — code and proofs only.</p>
+<p class="sub">Five trits fit in one byte (3⁵=243≤256). The repack shrinks ternary weights from <b>2.00 → 1.60 bits each</b> — bit-exact by arithmetic identity, no retraining, no calibration. Fewer bytes per token should mean proportionally faster bandwidth-bound decoding; the fused engine around it is built to compound that. Theory and protocol below — <b>no benchmark numbers are claimed</b> until independently verified.</p>
+<p class="meta">September 2026 · Mechanism + math only · Weights not shipped — code and proofs only.</p>
 
 <div class="links">
   <a class="btn primary" href="https://github.com/mohamedhossammohamed/bonsai-compress-base3">GitHub repo</a>
@@ -32,26 +32,18 @@
 </div>
 <p>Because 243 of 256 byte values are valid trit-quintuples, any byte decodes to exactly 5 trits — the mapping is an arithmetic identity, so reconstruction error is zero by construction, not by benchmark. Full proofs: <code>THEORY_S2.md</code>.</p>
 
-<h2 id="results">Measured results</h2>
+<h2 id="results">What theory guarantees — and what must still be measured</h2>
 <div class="card">
 <table>
-<tr><th></th><th>Before</th><th>After</th></tr>
-<tr><td>Bits / weight</td><td>2.00 (uint32-packed)</td><td class="good">1.60 (base-3)</td></tr>
-<tr><td>Bonsai-27B footprint</td><td>6.26 GB</td><td class="good">5.00 GB</td></tr>
-<tr><td>Per-layer GEMV</td><td>0.4566 ms</td><td class="good">0.3614 ms · 1.26×</td></tr>
-<tr><td>Reconstruction error</td><td>—</td><td class="good">0 (bit-exact)</td></tr>
+<tr><th></th><th>Arithmetic (certain)</th><th>Status</th></tr>
+<tr><td>Bits / weight</td><td>2.00 → <span class="good"><b>1.60</b></span></td><td>identity</td></tr>
+<tr><td>Byte ratio</td><td><span class="good"><b>0.80×</b></span> for the same weights</td><td>identity</td></tr>
+<tr><td>Reconstruction error</td><td><span class="good"><b>0 (bijective mapping)</b></span></td><td>by construction</td></tr>
+<tr><td>Decode latency</td><td>Faster, roughly with byte cut</td><td class="bad"><b>projection — unmeasured</b></td></tr>
+<tr><td>Engine speedup vs baselines</td><td>Should win on traffic</td><td class="bad"><b>projection — unmeasured</b></td></tr>
 </table>
 </div>
-<div class="card">
-<table>
-<tr><th>Bonsai-27B ctx</th><th>Fused tok/s</th><th>vs MLX SDPA</th><th>Traffic cut</th></tr>
-<tr><td>4k</td><td>2341</td><td class="good">2.73×</td><td>3.16×</td></tr>
-<tr><td>8k</td><td>1300</td><td class="good">2.72×</td><td>3.22×</td></tr>
-<tr><td>16k</td><td>673</td><td class="good">2.55×</td><td>3.25×</td></tr>
-<tr><td>32k</td><td>291</td><td class="good">2.49×</td><td>3.27×</td></tr>
-<tr><td>64k</td><td>175</td><td class="good">3.31×</td><td>3.27×</td></tr>
-</table>
-</div>
+<div class="note"><strong>Why no numbers.</strong> Earlier figures were withdrawn — single runs, unnamed baselines, wall-clock timing around async GPU launches. Each claim above graduates only via the <strong>verification protocol</strong> (<code>results/trials.md</code>: byte-count check, zero-mismatch transmission test, hardware-timestamped GEMV medians, back-to-back A/B serving runs with spreads). Previously published comparison clips were withdrawn for the same reason.</div>
 <div class="note"><strong>Two mechanisms, one page.</strong> The repack (lossless math) and the fused decode engine (measured speedups) are independent — either works without the other. Model <em>quality</em> lives in the upstream ternary checkpoint, which is not evaluated or shipped here.</div>
 
 <h2 id="engine">Serving architecture</h2>

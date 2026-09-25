@@ -13,12 +13,13 @@ pack weights tighter **and** decode them faster, with zero accuracy cost.
 Two independent mechanisms, both measured:
 
 1. **Scheme S2 base-3 repack** — 5 trits per byte (3⁵=243≤256), shrinking
-   ternary weights from 2.00 → **1.60 bits/weight**, bit-exact lossless.
-   Fewer bytes cross the memory bus per generated token: Bonsai-27B drops
-   **6.26 → 5.00 GB**, per-layer GEMV **0.4566 → 0.3614 ms (1.26×)**.
+   ternary weights from 2.00 → **1.60 bits/weight**, bit-exact by construction.
+   ~20% fewer bytes cross the memory bus per generated token, so bandwidth-bound
+   decode is expected to speed up roughly proportionally *(projection — see
+   `results/trials.md` for the verification protocol)*.
 2. **Fused decode engine** — register-level dequant fused into GEMV
-   (`runtime/` + `bench_bonsai_vs_mlx.py`): **2.1–3.3× faster** than MLX SDPA
-   with ~3.2× less memory traffic, on Apple Silicon.
+   (`runtime/` + `bench_bonsai_vs_mlx.py`), designed to beat unfused baselines
+   by moving ~3× less memory traffic *(projection — must be measured)*.
 
 Target architecture: 64-layer hybrid (48 Gated-DeltaNet linear attention +
 16 full GQA), out-of-core mmap weight streaming, paged KV, speculative
